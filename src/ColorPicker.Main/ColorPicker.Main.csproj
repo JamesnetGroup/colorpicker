@@ -6,4 +6,9 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Themes\Views\" />
+    <Folder Include="UI\Units\" />
+  </ItemGroup>
+
 </Project>
