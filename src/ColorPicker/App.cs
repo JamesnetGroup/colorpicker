@@ -13,7 +13,7 @@ namespace ColorPicker
     {
         protected override void OnStartup(StartupEventArgs e)
         {
-			bool dialogResult = false;
+			bool dialogResult = true;
 
 			while (dialogResult)
 			{
