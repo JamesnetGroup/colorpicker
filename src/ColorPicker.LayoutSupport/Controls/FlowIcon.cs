@@ -1,15 +1,9 @@
 ﻿using ColorPicker.Controls.Primitives;
-using ColorPicker.Converter;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 
 namespace ColorPicker.LayoutSupport.Controls
 {
-	public class FlowIcon : Icon
+    public class FlowIcon : Icon
 	{
 		static FlowIcon()
 		{

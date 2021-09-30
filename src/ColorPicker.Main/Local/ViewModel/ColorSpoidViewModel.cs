@@ -3,10 +3,6 @@ using ColorPicker.Foundation.Mvvm;
 using ColorPicker.Main.Local.Capture;
 using ColorPicker.Main.Local.Collection;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
@@ -14,7 +10,7 @@ using System.Windows.Media.Imaging;
 
 namespace ColorPicker.Main.Local.ViewModel
 {
-	public class ColorSpoidViewModel : ObservableObject
+    public class ColorSpoidViewModel : ObservableObject
 	{
 		#region Variables
 

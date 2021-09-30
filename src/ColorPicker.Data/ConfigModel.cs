@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace ColorPicker.Data
 {
-	public class ConfigModel
+    public class ConfigModel
 	{
 		public ThemeType Theme { get; set; }
 		public LanguageType Language { get; set; }

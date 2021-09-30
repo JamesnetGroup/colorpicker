@@ -1,12 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ColorPicker.Data
 {
-	public static class ConvertColor
+    public static class ConvertColor
 	{
 		public static ColorStruct Parse(string hex)
 		{

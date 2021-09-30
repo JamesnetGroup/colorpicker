@@ -1,13 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Input;
 
 namespace ColorPicker.Foundation.Mvvm
 {
-	public class RelayCommand<T> : ICommand
+    public class RelayCommand<T> : ICommand
 	{
 		private readonly Action<T> _execute = null;
 		private readonly Predicate<T> _canExecute = null;

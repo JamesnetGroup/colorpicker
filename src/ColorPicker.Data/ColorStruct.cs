@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ColorPicker.Data
+﻿namespace ColorPicker.Data
 {
-	public struct ColorStruct
+    public struct ColorStruct
 	{
 		public byte Red { get; set; }
 		public byte Green { get; set; }

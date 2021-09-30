@@ -1,17 +1,12 @@
 ﻿using ColorPicker.Data;
-using ColorPicker.Foundation;
 using Gma.System.MouseKeyHook;
 using System;
-using System.Collections.Generic;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Input;
 
 namespace ColorPicker.Main.Local.Capture
 {
-	public class PixelExtractWorker
+    public class PixelExtractWorker
 	{
 		// 임시 버퍼의 graphic 타입
 		private readonly Bitmap buffer = new(1, 1);

@@ -1,16 +1,12 @@
 ﻿using ColorPicker.Data;
-using ColorPicker.Foundation;
 using ColorPicker.Foundation.Mvvm;
 using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ColorPicker.Main.Local.Collection
 {
-	public class ExtractedColorCollection : ObservableCollection<ColorStampModel>
+    public class ExtractedColorCollection : ObservableCollection<ColorStampModel>
 	{
 		private RelayCommand<ColorStampModel> colorExtracted;
 

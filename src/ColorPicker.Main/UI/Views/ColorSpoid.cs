@@ -1,15 +1,9 @@
-﻿using ColorPicker.Converter;
-using ColorPicker.LayoutSupport.Controls;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using ColorPicker.LayoutSupport.Controls;
 using System.Windows;
 
 namespace ColorPicker.Main.UI.Views
 {
-	public class ColorSpoid : Explorer
+    public class ColorSpoid : Explorer
 	{
 		#region DefaultStyleKey
 
