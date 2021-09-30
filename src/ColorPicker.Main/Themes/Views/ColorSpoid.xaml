@@ -58,7 +58,7 @@
         <TextBlock Style="{StaticResource TXB.TITLE}"/>
     </DataTemplate>
 
-    <Style TargetType="{x:Type views:MainWindow}" BasedOn="{StaticResource {x:Type ctrls:Explorer}}">
+    <Style TargetType="{x:Type views:ColorSpoid}" BasedOn="{StaticResource {x:Type ctrls:Explorer}}">
         <Setter Property="Title" Value="{DynamicResource SPOID_TITLE}"/>
         <Setter Property="TitleTemplate" Value="{StaticResource TITLE}"/>
         <Setter Property="ContentTemplate">

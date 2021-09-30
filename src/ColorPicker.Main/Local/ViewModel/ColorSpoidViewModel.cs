@@ -14,7 +14,7 @@ using System.Windows.Media.Imaging;
 
 namespace ColorPicker.Main.Local.ViewModel
 {
-    public class MainViewModel : ObservableObject
+	public class ColorSpoidViewModel : ObservableObject
 	{
 		#region Variables
 
@@ -121,7 +121,7 @@ namespace ColorPicker.Main.Local.ViewModel
 
 		#region Constructor
 
-		public MainViewModel()
+		public ColorSpoidViewModel()
 		{
 			CaptureCommand = new RelayCommand<object>(BeginCapture);
 			PasteCommand = new RelayCommand<object>(Paste);
@@ -233,6 +233,7 @@ namespace ColorPicker.Main.Local.ViewModel
 		#endregion
 	}
 }
+
 
 
 
