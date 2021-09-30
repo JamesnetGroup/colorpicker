@@ -4,7 +4,7 @@
                     xmlns:views="clr-namespace:ColorPicker.Main.UI.Views"
 					xmlns:ctrls="clr-namespace:ColorPicker.LayoutSupport.Controls;assembly=ColorPicker.LayoutSupport">
 
-    <Style TargetType="{x:Type flows:FlowIcon}" x:Key="ICON">
+    <Style TargetType="{x:Type ctrls:FlowIcon}" x:Key="ICON">
         <Setter Property="SnapsToDevicePixels" Value="True"/>
         <Setter Property="UseLayoutRounding" Value="True"/>
         <Setter Property="Fill" Value="#AACDCDCD"/>

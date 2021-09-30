@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ColorPicker.Controls\ColorPicker.Controls.csproj" />
+    <ProjectReference Include="..\ColorPicker.Converter\ColorPicker.Converter.csproj" />
     <ProjectReference Include="..\ColorPicker.Data\ColorPicker.Data.csproj" />
     <ProjectReference Include="..\ColorPicker.Foundation\ColorPicker.Foundation.csproj" />
   </ItemGroup>
