@@ -1,4 +1,6 @@
-﻿namespace ColorPicker.Data
+﻿using System.Drawing;
+
+namespace ColorPicker.Data
 {
     public struct ColorStruct
 	{
@@ -22,7 +24,7 @@
 			Alpha = (byte)alpha;
 		}
 
-		public ColorStruct(System.Drawing.Color color)
+		public ColorStruct(Color color)
 		{
 			Red = color.R;
 			Green = color.G;
