@@ -15,6 +15,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Base", "Base", "{DA0C429A-E
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorPicker.Data", "ColorPicker.Data\ColorPicker.Data.csproj", "{3C506880-8645-4CCC-908F-CED7494500AC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorPicker.LayoutSupport", "ColorPicker.LayoutSupport\ColorPicker.LayoutSupport.csproj", "{8600CCE9-8B79-4D8D-AE2C-662F115F8BFA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorPicker.Controls", "ColorPicker.Controls\ColorPicker.Controls.csproj", "{84FA0919-377B-4BFC-993D-F4D0B9472A86}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +41,14 @@ Global
 		{3C506880-8645-4CCC-908F-CED7494500AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3C506880-8645-4CCC-908F-CED7494500AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3C506880-8645-4CCC-908F-CED7494500AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8600CCE9-8B79-4D8D-AE2C-662F115F8BFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8600CCE9-8B79-4D8D-AE2C-662F115F8BFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8600CCE9-8B79-4D8D-AE2C-662F115F8BFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8600CCE9-8B79-4D8D-AE2C-662F115F8BFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84FA0919-377B-4BFC-993D-F4D0B9472A86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84FA0919-377B-4BFC-993D-F4D0B9472A86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84FA0919-377B-4BFC-993D-F4D0B9472A86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84FA0919-377B-4BFC-993D-F4D0B9472A86}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -45,6 +57,8 @@ Global
 		{C74BC40F-B2E0-4644-BDA9-CC5F85210999} = {71351A19-E5AA-4576-B4AC-D3F00357A2AF}
 		{970B8156-A86A-4F34-8A6A-FA2BD5930FCC} = {DA0C429A-EE78-418A-9920-BEED4FDBACCB}
 		{3C506880-8645-4CCC-908F-CED7494500AC} = {DA0C429A-EE78-418A-9920-BEED4FDBACCB}
+		{8600CCE9-8B79-4D8D-AE2C-662F115F8BFA} = {DA0C429A-EE78-418A-9920-BEED4FDBACCB}
+		{84FA0919-377B-4BFC-993D-F4D0B9472A86} = {DA0C429A-EE78-418A-9920-BEED4FDBACCB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1E74BECC-4B8C-41D3-94D6-CD4172657022}

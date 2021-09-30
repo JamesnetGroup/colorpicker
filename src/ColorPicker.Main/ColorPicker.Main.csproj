@@ -8,7 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Themes\Views\" />
     <Folder Include="UI\Units\" />
   </ItemGroup>
 
@@ -20,6 +19,7 @@
   <ItemGroup>
     <ProjectReference Include="..\ColorPicker.Data\ColorPicker.Data.csproj" />
     <ProjectReference Include="..\ColorPicker.Foundation\ColorPicker.Foundation.csproj" />
+    <ProjectReference Include="..\ColorPicker.LayoutSupport\ColorPicker.LayoutSupport.csproj" />
   </ItemGroup>
 
 </Project>
