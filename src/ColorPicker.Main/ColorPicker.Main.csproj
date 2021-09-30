@@ -4,11 +4,22 @@
     <TargetFramework>net6.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
+	<UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
 
   <ItemGroup>
     <Folder Include="Themes\Views\" />
     <Folder Include="UI\Units\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MouseKeyHook" Version="5.6.0" />
+    <PackageReference Include="System.Drawing.Common" Version="5.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ColorPicker.Data\ColorPicker.Data.csproj" />
+    <ProjectReference Include="..\ColorPicker.Foundation\ColorPicker.Foundation.csproj" />
   </ItemGroup>
 
 </Project>
