@@ -8,20 +8,20 @@ using System.Windows;
 namespace ColorPicker.Main.UI.Views
 {
     public class MainWindow : Window
-	{
-		#region DefaultStyleKey
+    {
+        #region DefaultStyleKey
 
-		static MainWindow()
-		{
-			DefaultStyleKeyProperty.OverrideMetadata(typeof(MainWindow), new FrameworkPropertyMetadata(typeof(MainWindow)));
-		}
-		#endregion
+        static MainWindow()
+        {
+            DefaultStyleKeyProperty.OverrideMetadata(typeof(MainWindow), new FrameworkPropertyMetadata(typeof(MainWindow)));
+        }
+        #endregion
 
-		#region Constructor
+        #region Constructor
 
-		public MainWindow()
-		{
-		}
-		#endregion
-	}
+        public MainWindow()
+        {
+        }
+        #endregion
+    }
 }

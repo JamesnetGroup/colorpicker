@@ -13,18 +13,18 @@ namespace ColorPicker
     {
         protected override void OnStartup(StartupEventArgs e)
         {
-			bool dialogResult = true;
+            bool dialogResult = true;
 
-			while (dialogResult)
-			{
-				ShutdownMode = ShutdownMode.OnExplicitShutdown;
-				MainWindow main = new()
-				{
-					DataContext = new MainViewModel()
-				};
-				_ = main.ShowDialog();
-				dialogResult = (bool)main.DialogResult;
-			}
-		}
+            while (dialogResult)
+            {
+                ShutdownMode = ShutdownMode.OnExplicitShutdown;
+                MainWindow main = new()
+                {
+                    DataContext = new MainViewModel()
+                };
+                _ = main.ShowDialog();
+                dialogResult = (bool)main.DialogResult;
+            }
+        }
     }
 }
