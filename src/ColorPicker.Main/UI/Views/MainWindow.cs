@@ -1,4 +1,5 @@
-﻿using ColorPicker.LayoutSupport.Controls;
+﻿using ColorPicker.Converter;
+using ColorPicker.LayoutSupport.Controls;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,6 +23,7 @@ namespace ColorPicker.Main.UI.Views
 
         public MainWindow()
         {
+            
         }
         #endregion
     }

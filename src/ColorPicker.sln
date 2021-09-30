@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorPicker.LayoutSupport",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorPicker.Controls", "ColorPicker.Controls\ColorPicker.Controls.csproj", "{84FA0919-377B-4BFC-993D-F4D0B9472A86}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorPicker.Converter", "ColorPicker.Converter\ColorPicker.Converter.csproj", "{A7344D50-767F-42E6-924F-EFFB99CD076F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -49,6 +51,10 @@ Global
 		{84FA0919-377B-4BFC-993D-F4D0B9472A86}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{84FA0919-377B-4BFC-993D-F4D0B9472A86}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{84FA0919-377B-4BFC-993D-F4D0B9472A86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7344D50-767F-42E6-924F-EFFB99CD076F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7344D50-767F-42E6-924F-EFFB99CD076F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7344D50-767F-42E6-924F-EFFB99CD076F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7344D50-767F-42E6-924F-EFFB99CD076F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -59,6 +65,7 @@ Global
 		{3C506880-8645-4CCC-908F-CED7494500AC} = {DA0C429A-EE78-418A-9920-BEED4FDBACCB}
 		{8600CCE9-8B79-4D8D-AE2C-662F115F8BFA} = {DA0C429A-EE78-418A-9920-BEED4FDBACCB}
 		{84FA0919-377B-4BFC-993D-F4D0B9472A86} = {DA0C429A-EE78-418A-9920-BEED4FDBACCB}
+		{A7344D50-767F-42E6-924F-EFFB99CD076F} = {DA0C429A-EE78-418A-9920-BEED4FDBACCB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1E74BECC-4B8C-41D3-94D6-CD4172657022}
