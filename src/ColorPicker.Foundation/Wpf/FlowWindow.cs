@@ -26,7 +26,7 @@ namespace ColorPicker.Foundation.Wpf
 
 		#region Show
 
-		public abstract void OnShow(MenuModel menu);
+		public abstract void OnShow();
 		#endregion
 
 		#region OnDesignerMode

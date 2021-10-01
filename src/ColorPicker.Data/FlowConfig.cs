@@ -41,18 +41,6 @@ namespace ColorPicker.Data
 			Config = deserializer.Deserialize<ConfigModel>(File.ReadAllText(CFG_PATH));
 		}
 
-		public static void SaveLanguage(LanguageType lang)
-		{
-			Config.Language = lang;
-			SaveConfig(Config);
-		}
-
-		public static void SaveTheme(ThemeType theme)
-		{
-			Config.Theme = theme;
-			SaveConfig(Config);
-		}
-
 		public static void SaveSpoidColor(string color)
 		{
 			Config.SpoidColor = color;
@@ -64,9 +52,9 @@ namespace ColorPicker.Data
 			return Config;
 		}
 
-		public static void SaveLocation(MenuModel menu, int x, int y, int width, int height)
+		public static void SaveLocation(int x, int y, int width, int height)
 		{
-			if (Config.ViewOptions.FirstOrDefault(x => menu.IconType == x.IconType) is ViewOptionModel view)
+			if (Config.ViewOptions.FirstOrDefault() is ViewOptionModel view)
 			{
 				view.LocX = x;
 				view.LocY = y;
@@ -75,7 +63,7 @@ namespace ColorPicker.Data
 			}
 			else
 			{
-				Config.ViewOptions.Add(new ViewOptionModel { IconType = menu.IconType, LocX = x, LocY = y, Width = width, Height = height });
+				Config.ViewOptions.Add(new ViewOptionModel { LocX = x, LocY = y, Width = width, Height = height });
 			}
 
 			SaveConfig(Config);

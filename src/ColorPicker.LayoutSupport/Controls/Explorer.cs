@@ -29,7 +29,6 @@ namespace ColorPicker.LayoutSupport.Controls
 		#region Variables
 
 		protected bool IsFixedSize;
-		protected MenuModel MenuInfo;
 		private List<ViewOptionModel> Options => FlowConfig.Config.ViewOptions;
 		#endregion
 
@@ -78,10 +77,9 @@ namespace ColorPicker.LayoutSupport.Controls
 
 		#region OnShow
 
-		public override void OnShow(MenuModel menu)
+		public override void OnShow()
 		{
-			MenuInfo = menu;
-			if (Options.FirstOrDefault(x => x.IconType == menu.IconType) is ViewOptionModel option)
+			if (Options.FirstOrDefault() is ViewOptionModel option)
 			{
 				Left = option.LocX;
 				Top = option.LocY;
@@ -101,7 +99,7 @@ namespace ColorPicker.LayoutSupport.Controls
 		protected override void OnClosed(EventArgs e)
 		{
 			base.OnClosed(e);
-			FlowConfig.SaveLocation(MenuInfo, (int)Left, (int)Top, (int)ActualWidth, (int)ActualHeight);
+			FlowConfig.SaveLocation((int)Left, (int)Top, (int)ActualWidth, (int)ActualHeight);
 		}
 		#endregion
 

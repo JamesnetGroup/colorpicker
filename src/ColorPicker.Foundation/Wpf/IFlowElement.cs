@@ -6,6 +6,6 @@ namespace ColorPicker.Foundation.Wpf
 	public interface IFlowElement
 	{
 		IFlowElement UseViewModel(ObservableObject vm);
-		void OnShow(MenuModel menu);
+		void OnShow();
 	}
 }
