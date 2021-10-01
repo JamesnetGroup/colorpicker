@@ -1,6 +1,7 @@
 ﻿using System.Windows;
-using System.Windows.Controls;
+using ColorPicker.Controls.Primitives;
 using ColorPicker.LayoutSupport.Controls;
+using ColorPicker.Main.Local.ViewModel;
 
 namespace ColorPicker.Main.UI.Views
 {
@@ -25,6 +26,13 @@ namespace ColorPicker.Main.UI.Views
 
             //Loaded += (s, e) => Topmost = true;
         }
+
+        public bool? ShowDialog()
+        {
+            DataContext = new ColorPickerViewModel();
+            return new EmptyWindow(this).ShowDialog();
+        }
+    }
         #endregion
     }
 }
