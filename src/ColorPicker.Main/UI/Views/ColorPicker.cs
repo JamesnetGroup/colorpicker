@@ -1,4 +1,5 @@
 ﻿using System.Windows;
+using System.Windows.Controls;
 using ColorPicker.LayoutSupport.Controls;
 
 namespace ColorPicker.Main.UI.Views
@@ -17,12 +18,12 @@ namespace ColorPicker.Main.UI.Views
 
         public ColorPicker()
         {
-            IsFixedSize = true;
-            ResizeMode = ResizeMode.NoResize;
+            //IsFixedSize = true;
+            //ResizeMode = ResizeMode.NoResize;
             Width = 400;
             Height = 360;
 
-            Loaded += (s, e) => Topmost = true;
+            //Loaded += (s, e) => Topmost = true;
         }
         #endregion
     }

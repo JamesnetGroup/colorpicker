@@ -159,7 +159,7 @@ namespace ColorPicker.Main.Local.ViewModel
         protected override void OnLoaded(Control view)
         {
             base.OnLoaded(view);
-            ((Window)UIView).Closed += Window_Closed;
+            Window.GetWindow(UIView).Closed += Window_Closed;
         }
         #endregion
 
@@ -227,6 +227,7 @@ namespace ColorPicker.Main.Local.ViewModel
         private void Window_Closed(object sender, EventArgs e)
         {
             FlowConfig.SaveSpoidColor(CurrentColor);
+            Window.GetWindow(this.UIView).Close();
         }
         #endregion
 

@@ -1,5 +1,4 @@
-﻿using ColorPicker.Data;
-using ColorPicker.Foundation.Mvvm;
+﻿using ColorPicker.Foundation.Mvvm;
 
 namespace ColorPicker.Foundation.Wpf
 {

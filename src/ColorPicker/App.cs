@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Windows;
-using ColorPicker.Main.UI.Views;
 using ColorPicker.Main.Local.ViewModel;
-
+using ColorPicker.Main.UI.Views;
 
 namespace ColorPicker
 {
@@ -10,17 +9,22 @@ namespace ColorPicker
     {
         protected override void OnStartup(StartupEventArgs e)
         {
-            bool dialogResult = true;
+            bool? dialogResult = true;
 
-            while (dialogResult)
+            while (dialogResult == true)
             {
                 ShutdownMode = ShutdownMode.OnExplicitShutdown;
-                Main.UI.Views.ColorPicker main = new()
-                {
-                    DataContext = new ColorPickerViewModel()
-                };
-                _ = main.ShowDialog();
-                dialogResult = (bool)main.DialogResult;
+                Main.UI.Views.ColorPicker main = new();
+                MainWindow win = new MainWindow();
+                win.WindowStyle = WindowStyle.None;
+                win.AllowsTransparency = true;
+                win.SizeToContent = SizeToContent.WidthAndHeight;
+
+                win.Content = main;
+                    main.DataContext = new ColorPickerViewModel();
+                
+                _ = win.ShowDialog();
+                dialogResult = win.DialogResult;
             }
             Environment.Exit(0);
         }

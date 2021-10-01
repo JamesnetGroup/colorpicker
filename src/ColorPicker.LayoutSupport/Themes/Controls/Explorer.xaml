@@ -71,6 +71,14 @@
         <Setter Property="Grid.ColumnSpan" Value="4"/>
         <Setter Property="Background" Value="#222222"/>
     </Style>
+    <Style TargetType="{x:Type TextBlock}" x:Key="TXB.TITLE">
+        <Setter Property="Text" Value=" COLOR PICKER"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="Margin" Value="10 0 10 0"/>
+        <Setter Property="Foreground" Value="#FFFFFF"/>
+        <Setter Property="IsHitTestVisible" Value="False"/>
+        <Setter Property="FontSize" Value="13"/>
+    </Style>
 
     <Style TargetType="{x:Type ctrls:Explorer}">
         <Setter Property="Background" Value="#252525"/>
@@ -80,7 +88,7 @@
         <Setter Property="UseLayoutRounding" Value="True"/>
         <Setter Property="MinWidth" Value="200"/>
         <Setter Property="MinHeight" Value="200"/>
-        <Setter Property="WindowChrome.WindowChrome">
+        <!--<Setter Property="WindowChrome.WindowChrome">
             <Setter.Value>
                 <WindowChrome CaptionHeight="0" 
 							  CornerRadius="0" 
@@ -89,7 +97,7 @@
 							  ResizeBorderThickness="5" 
 							  UseAeroCaptionButtons="False"/>
             </Setter.Value>
-        </Setter>
+        </Setter>-->
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type ctrls:Explorer}">
@@ -111,7 +119,8 @@
 
                             <prims:DraggableBar x:Name="PART_DragBar" Style="{StaticResource BAR.DRAGGABLE}"/>
 
-                            <ContentPresenter ContentSource="DataContext" ContentTemplate="{TemplateBinding TitleTemplate}"/>
+                            <!--<ContentPresenter ContentTemplate="{TemplateBinding TitleTemplate}"/>-->
+                            <TextBlock Style="{StaticResource TXB.TITLE}"/>
                             <Button Grid.Column="1" Style="{StaticResource BTN.MIN}"/>
                             <Button Grid.Column="2" Style="{StaticResource BTN.CLOSE}" x:Name="PART_CloseButton"/>
 

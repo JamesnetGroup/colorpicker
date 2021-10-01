@@ -1,11 +1,11 @@
-﻿using ColorPicker.Data;
-using ColorPicker.Foundation.Mvvm;
+﻿using ColorPicker.Foundation.Mvvm;
 using System.ComponentModel;
 using System.Windows;
+using System.Windows.Controls;
 
 namespace ColorPicker.Foundation.Wpf
 {
-    public abstract class FlowWindow : Window, IFlowElement
+    public abstract class FlowWindow : ContentControl, IFlowElement
     {
         #region Constructor
 

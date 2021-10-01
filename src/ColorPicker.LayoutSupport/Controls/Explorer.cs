@@ -54,9 +54,6 @@ namespace ColorPicker.LayoutSupport.Controls
 
         public Explorer()
         {
-            WindowStyle = WindowStyle.None;
-            ResizeMode = ResizeMode.CanResize;
-            AllowsTransparency = true;
         }
         #endregion
 
@@ -66,7 +63,7 @@ namespace ColorPicker.LayoutSupport.Controls
         {
             if (GetTemplateChild("PART_CloseButton") is Button btn)
             {
-                btn.Click += (s, e) => Close();
+                //btn.Click += (s, e) => Close();
             }
             if (GetTemplateChild("PART_DragBar") is DraggableBar bar)
             {
@@ -79,28 +76,33 @@ namespace ColorPicker.LayoutSupport.Controls
 
         public override void OnShow()
         {
-            if (Options.FirstOrDefault() is ViewOptionModel option)
-            {
-                Left = option.LocX;
-                Top = option.LocY;
+            //if (Options.FirstOrDefault() is ViewOptionModel option)
+            //{
+            //    var win = Window.GetWindow(this);
+            //    //WindowStyle = WindowStyle.None;
+            //    //ResizeMode = ResizeMode.CanResize;
+            //    //AllowsTransparency = true;
 
-                if (!IsFixedSize)
-                {
-                    Width = option.Width;
-                    Height = option.Height;
-                }
-            }
-            Show();
+            //    win.Left = option.LocX;
+            //    win.Top = option.LocY;
+
+            //    if (!IsFixedSize)
+            //    {
+            //        Width = option.Width;
+            //        Height = option.Height;
+            //    }
+            //}
+            //Show();
         }
         #endregion
 
         #region OnClosed
 
-        protected override void OnClosed(EventArgs e)
-        {
-            base.OnClosed(e);
-            FlowConfig.SaveLocation((int)Left, (int)Top, (int)ActualWidth, (int)ActualHeight);
-        }
+        //protected override void OnClosed(EventArgs e)
+        //{
+        //    base.OnClosed(e);
+        //FlowConfig.SaveLocation((int) Left, (int) Top, (int) ActualWidth, (int) ActualHeight);
+        //}
         #endregion
 
         #region WindowDragMove
@@ -109,7 +111,7 @@ namespace ColorPicker.LayoutSupport.Controls
         {
             if (e.LeftButton == MouseButtonState.Pressed)
             {
-                GetWindow(this).DragMove();
+                Window.GetWindow(this).DragMove();
             }
         }
         #endregion
