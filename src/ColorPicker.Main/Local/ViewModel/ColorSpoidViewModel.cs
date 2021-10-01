@@ -20,7 +20,7 @@ namespace ColorPicker.Main.Local.ViewModel
         private string _currentColor;
         private string _reverseColor;
         private string _contrastColor;
-        private bool _isCaptureColor;
+        private bool _isColorCapturing;
 
         private BitmapSource _captureImage;
 
@@ -43,12 +43,12 @@ namespace ColorPicker.Main.Local.ViewModel
         }
         #endregion
 
-        #region IsCaptureColor
+        #region IsColorCapturing
 
         public bool IsColorCapturing
         {
-            get => _isCaptureColor;
-            set { _isCaptureColor = value; OnPropertyChanged(); }
+            get => _isColorCapturing;
+            set { _isColorCapturing = value; OnPropertyChanged(); }
         }
         #endregion
 
@@ -147,7 +147,6 @@ namespace ColorPicker.Main.Local.ViewModel
                     ExtractColor(color.SetAddBlue(2));
                 }
             }
-
         }
 
         #endregion

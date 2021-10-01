@@ -6,13 +6,16 @@
 
     <Style TargetType="{x:Type Button}" x:Key="BTN.SPOID">
         <Setter Property="Command" Value="{Binding CaptureCommand}"/>
-        <Setter Property="CommandParameter" Value="COPY"/>
         <Setter Property="Margin" Value="10 0 10 0"/>
+        <Setter Property="Cursor" Value="Hand"/>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type Button}">
                     <Border Background="Transparent">
-                        <ctrls:FlowIcon x:Name="icon" IconType="EyedropperVariant" Width="30" Height="30" Fill="{DynamicResource BRUSH.FONT.H01}"/>
+                        <ctrls:FlowIcon IconType="EyedropperVariant" 
+                                        Width="30" 
+                                        Height="30" 
+                                        Fill="#FFC9D1D3"/>
                     </Border>
                 </ControlTemplate>
             </Setter.Value>
@@ -23,11 +26,16 @@
         <Setter Property="Command" Value="{Binding PasteCommand}"/>
         <Setter Property="CommandParameter" Value="COPY"/>
         <Setter Property="Margin" Value="10 0 10 0"/>
+        <Setter Property="Cursor" Value="Hand"/>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type Button}">
                     <Border Background="Transparent">
-                        <ctrls:FlowIcon x:Name="icon" IconType="ContentPaste" Width="26" Height="26" Fill="{DynamicResource BRUSH.FONT.H01}" IsHitTestVisible="False"/>
+                        <ctrls:FlowIcon IconType="ContentPaste" 
+                                        Width="26" 
+                                        Height="26" 
+                                        Fill="#FFC9D1D3" 
+                                        IsHitTestVisible="False"/>
                     </Border>
                 </ControlTemplate>
             </Setter.Value>
@@ -44,13 +52,24 @@
                 <ControlTemplate TargetType="{x:Type units:ExtractColorBox}">
                     <Grid>
                         <Border Background="{Binding CurrentColor}">
-                            <TextBox x:Name="text" Text="{Binding CurrentColor}" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="15" 
-									 Foreground="{Binding ContrastColor}" IsReadOnly="True" Background="Transparent" BorderThickness="0"/>
+                            <TextBox x:Name="text" 
+                                     Text="{Binding CurrentColor}" 
+                                     VerticalAlignment="Center" 
+                                     HorizontalAlignment="Center" 
+                                     FontSize="15" 
+									 Foreground="{Binding ContrastColor}" 
+                                     IsReadOnly="True" 
+                                     Background="Transparent" 
+                                     BorderThickness="0"/>
                         </Border>
                         <Border x:Name="border" Background="Transparent"/>
-                        <StackPanel x:Name="icon" Orientation="Horizontal" Visibility="Collapsed" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <StackPanel x:Name="icon" 
+                                    Orientation="Horizontal" 
+                                    Visibility="Collapsed" 
+                                    HorizontalAlignment="Center" 
+                                    VerticalAlignment="Center">
                             <Button Style="{StaticResource BTN.SPOID}"/>
-                            <Button x:Name="paste" Style="{StaticResource BTN.PASTE}"/>
+                            <Button Style="{StaticResource BTN.PASTE}"/>
                         </StackPanel>
                     </Grid>
                     <ControlTemplate.Triggers>
@@ -62,9 +81,8 @@
                             <Setter TargetName="text" Property="Text" Value=""/>
                             <Setter TargetName="border" Property="Background" Value="#AA000000"/>
                             <Setter TargetName="icon" Property="Visibility" Value="Visible"/>
-                            <Setter TargetName="paste" Property="Cursor" Value="Hand"/>
                         </MultiDataTrigger>
-                        <DataTrigger Binding="{Binding IsCaptureColor}" Value="True">
+                        <DataTrigger Binding="{Binding IsColorCapturing}" Value="True">
                             <Setter TargetName="text" Property="Text" Value="{Binding CurrentColor}"/>
                             <Setter TargetName="border" Property="Background" Value="Transparent"/>
                             <Setter TargetName="icon" Property="Visibility" Value="Collapsed"/>

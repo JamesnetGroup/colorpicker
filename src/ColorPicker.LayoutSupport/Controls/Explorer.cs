@@ -1,12 +1,13 @@
-﻿using ColorPicker.Controls.Primitives;
-using ColorPicker.Data;
-using ColorPicker.Foundation.Wpf;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.Linq;
 using System.Windows;
-using System.Windows.Controls;
 using System.Windows.Input;
+using System.Windows.Controls;
+using System.Collections.Generic;
+using ColorPicker.Data;
+using ColorPicker.Foundation.Wpf;
+using ColorPicker.Controls.Primitives;
+
 
 namespace ColorPicker.LayoutSupport.Controls
 {

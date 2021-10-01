@@ -37,7 +37,7 @@
         <Setter Property="Margin" Value="4 0 8 0"/>
         <Setter Property="BorderThickness" Value="0"/>
         <Setter Property="VerticalAlignment" Value="Top"/>
-        <Setter Property="Background" Value="{DynamicResource BRUSH.BG}"/>
+        <Setter Property="Background" Value="#FF232323"/>
         <Setter Property="ItemContainerStyle" Value="{StaticResource LBXI}"/>
         <Setter Property="ItemsSource" Value="{Binding ExtractedColorSet}"/>
         <Setter Property="Template">
