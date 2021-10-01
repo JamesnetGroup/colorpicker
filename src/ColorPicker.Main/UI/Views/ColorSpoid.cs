@@ -1,29 +1,29 @@
-﻿using ColorPicker.LayoutSupport.Controls;
-using System.Windows;
+﻿using System.Windows;
+using ColorPicker.LayoutSupport.Controls;
 
 namespace ColorPicker.Main.UI.Views
 {
     public class ColorSpoid : Explorer
-	{
-		#region DefaultStyleKey
+    {
+        #region DefaultStyleKey
 
-		static ColorSpoid()
-		{
-			DefaultStyleKeyProperty.OverrideMetadata(typeof(ColorSpoid), new FrameworkPropertyMetadata(typeof(ColorSpoid)));
-		}
-		#endregion
+        static ColorSpoid()
+        {
+            DefaultStyleKeyProperty.OverrideMetadata(typeof(ColorSpoid), new FrameworkPropertyMetadata(typeof(ColorSpoid)));
+        }
+        #endregion
 
-		#region Constructor
+        #region Constructor
 
-		public ColorSpoid()
-		{
-			IsFixedSize = true;
-			ResizeMode = System.Windows.ResizeMode.NoResize;
-			Width = 400;
-			Height = 360;
+        public ColorSpoid()
+        {
+            IsFixedSize = true;
+            ResizeMode = ResizeMode.NoResize;
+            Width = 400;
+            Height = 360;
 
-			Loaded += (s, e) => Topmost = true;
-		}
-		#endregion
-	}
+            Loaded += (s, e) => Topmost = true;
+        }
+        #endregion
+    }
 }

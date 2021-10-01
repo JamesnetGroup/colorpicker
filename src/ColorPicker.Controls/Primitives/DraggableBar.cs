@@ -3,6 +3,6 @@
 namespace ColorPicker.Controls.Primitives
 {
     public class DraggableBar : Border
-	{
-	}
+    {
+    }
 }

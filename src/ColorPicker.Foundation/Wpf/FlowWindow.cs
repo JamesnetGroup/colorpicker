@@ -6,52 +6,52 @@ using System.Windows;
 namespace ColorPicker.Foundation.Wpf
 {
     public abstract class FlowWindow : Window, IFlowElement
-	{
-		#region Constructor
+    {
+        #region Constructor
 
-		public FlowWindow()
-		{
-			Loaded += FlowWindow_Loaded;
-		}
-		#endregion
+        public FlowWindow()
+        {
+            Loaded += FlowWindow_Loaded;
+        }
+        #endregion
 
-		#region UseMvvm
+        #region UseMvvm
 
-		public IFlowElement UseViewModel(ObservableObject vm)
-		{
-			DataContext = vm;
-			return this;
-		}
-		#endregion
+        public IFlowElement UseViewModel(ObservableObject vm)
+        {
+            DataContext = vm;
+            return this;
+        }
+        #endregion
 
-		#region Show
+        #region Show
 
-		public abstract void OnShow();
-		#endregion
+        public abstract void OnShow();
+        #endregion
 
-		#region OnDesignerMode
+        #region OnDesignerMode
 
-		protected virtual void OnDesignerMode()
-		{
+        protected virtual void OnDesignerMode()
+        {
 
-		}
+        }
 
-		#endregion
+        #endregion
 
-		#region Loaded
+        #region Loaded
 
-		private void FlowWindow_Loaded(object sender, RoutedEventArgs e)
-		{
-			if (DesignerProperties.GetIsInDesignMode(this))
-			{
-				OnDesignerMode();
-			}
+        private void FlowWindow_Loaded(object sender, RoutedEventArgs e)
+        {
+            if (DesignerProperties.GetIsInDesignMode(this))
+            {
+                OnDesignerMode();
+            }
 
-			if (DataContext is ObservableObject vm)
-			{
-				vm.ViewRegister(this);
-			}
-		}
-		#endregion
-	}
+            if (DataContext is ObservableObject vm)
+            {
+                vm.ViewRegister(this);
+            }
+        }
+        #endregion
+    }
 }
