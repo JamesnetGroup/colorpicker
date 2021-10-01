@@ -4,7 +4,6 @@
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="/ColorPicker.Main;component/Themes/Units/ExtractColorBox.xaml"/>
         <ResourceDictionary Source="/ColorPicker.Main;component/Themes/Units/PaletteGridBox.xaml"/>
-        <ResourceDictionary Source="/ColorPicker.Main;component/Themes/Views/ColorPicker.xaml"/>
-        <ResourceDictionary Source="/ColorPicker.Main;component/Themes/Views/MainWindow.xaml"/>
+        <ResourceDictionary Source="/ColorPicker.Main;component/Themes/Views/ColorPickerView.xaml"/>
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>

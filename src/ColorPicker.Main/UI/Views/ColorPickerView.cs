@@ -4,19 +4,19 @@ using ColorPicker.LayoutSupport.Controls;
 
 namespace ColorPicker.Main.UI.Views
 {
-    public class ColorPicker : Explorer
+    public class ColorPickerView : Explorer
     {
         #region DefaultStyleKey
 
-        static ColorPicker()
+        static ColorPickerView()
         {
-            DefaultStyleKeyProperty.OverrideMetadata(typeof(ColorPicker), new FrameworkPropertyMetadata(typeof(ColorPicker)));
+            DefaultStyleKeyProperty.OverrideMetadata(typeof(ColorPickerView), new FrameworkPropertyMetadata(typeof(ColorPickerView)));
         }
         #endregion
 
         #region Constructor
 
-        public ColorPicker()
+        public ColorPickerView()
         {
             //IsFixedSize = true;
             //ResizeMode = ResizeMode.NoResize;

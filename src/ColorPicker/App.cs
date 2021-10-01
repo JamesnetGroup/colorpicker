@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows;
+using ColorPicker.Controls.Primitives;
 using ColorPicker.Main.Local.ViewModel;
 using ColorPicker.Main.UI.Views;
 
@@ -14,14 +15,8 @@ namespace ColorPicker
             while (dialogResult == true)
             {
                 ShutdownMode = ShutdownMode.OnExplicitShutdown;
-                Main.UI.Views.ColorPicker main = new();
-                MainWindow win = new MainWindow();
-                win.WindowStyle = WindowStyle.None;
-                win.AllowsTransparency = true;
-                win.SizeToContent = SizeToContent.WidthAndHeight;
-
-                win.Content = main;
-                    main.DataContext = new ColorPickerViewModel();
+                EmptyWindow win = new(new ColorPickerView());
+                win.DataContext = new ColorPickerViewModel();
                 
                 _ = win.ShowDialog();
                 dialogResult = win.DialogResult;

@@ -48,7 +48,7 @@
 
 
 
-    <Style TargetType="{x:Type views:ColorPicker}" BasedOn="{StaticResource {x:Type ctrls:Explorer}}">
+    <Style TargetType="{x:Type views:ColorPickerView}" BasedOn="{StaticResource {x:Type ctrls:Explorer}}">
         <!--<Setter Property="Title" Value="Color Spoid"/>-->
         <!--<Setter Property="TitleTemplate" >
             <Setter.Value>
