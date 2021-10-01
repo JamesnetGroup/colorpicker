@@ -43,7 +43,9 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type units:PaletteGridBox}">
-                    <ScrollViewer HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Disabled" BorderThickness="0">
+                    <ScrollViewer HorizontalScrollBarVisibility="Disabled"
+                                  VerticalScrollBarVisibility="Disabled" 
+                                  BorderThickness="0">
                         <ItemsPresenter/>
                     </ScrollViewer>
                 </ControlTemplate>
