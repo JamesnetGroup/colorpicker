@@ -3,19 +3,19 @@ using ColorPicker.LayoutSupport.Controls;
 
 namespace ColorPicker.Main.UI.Views
 {
-    public class ColorSpoid : Explorer
+    public class ColorPicker : Explorer
     {
         #region DefaultStyleKey
 
-        static ColorSpoid()
+        static ColorPicker()
         {
-            DefaultStyleKeyProperty.OverrideMetadata(typeof(ColorSpoid), new FrameworkPropertyMetadata(typeof(ColorSpoid)));
+            DefaultStyleKeyProperty.OverrideMetadata(typeof(ColorPicker), new FrameworkPropertyMetadata(typeof(ColorPicker)));
         }
         #endregion
 
         #region Constructor
 
-        public ColorSpoid()
+        public ColorPicker()
         {
             IsFixedSize = true;
             ResizeMode = ResizeMode.NoResize;

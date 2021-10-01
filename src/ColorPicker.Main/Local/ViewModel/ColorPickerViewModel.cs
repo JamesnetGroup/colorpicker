@@ -10,7 +10,7 @@ using ColorPicker.Main.Local.Collection;
 
 namespace ColorPicker.Main.Local.ViewModel
 {
-    public class ColorSpoidViewModel : ObservableObject
+    public class ColorPickerViewModel : ObservableObject
     {
         #region Variables
 
@@ -29,6 +29,8 @@ namespace ColorPicker.Main.Local.ViewModel
         #endregion
 
         #region Commands
+
+        public ICommand MinimizeCommand { get; set; }
 
         public ICommand PasteCommand { get; }
         public ICommand CaptureCommand { get; }
@@ -117,10 +119,11 @@ namespace ColorPicker.Main.Local.ViewModel
 
         #region Constructor
 
-        public ColorSpoidViewModel()
+        public ColorPickerViewModel()
         {
             CaptureCommand = new RelayCommand<object>(BeginCapture);
             PasteCommand = new RelayCommand<object>(Paste);
+            MinimizeCommand = new RelayCommand<object>(DoMinimizing);
             ExtractedColorSet = new ExtractedColorCollection();
 
             Capture = new PixelExtractWorker
@@ -224,6 +227,14 @@ namespace ColorPicker.Main.Local.ViewModel
         private void Window_Closed(object sender, EventArgs e)
         {
             FlowConfig.SaveSpoidColor(CurrentColor);
+        }
+        #endregion
+
+        #region DoMinimizing
+
+        private void DoMinimizing(object ui)
+        {
+            Window.GetWindow((UIElement)ui).WindowState = WindowState.Minimized;
         }
         #endregion
     }

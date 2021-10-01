@@ -47,18 +47,19 @@
     </Style>
 
     <Style TargetType="{x:Type TextBlock}" x:Key="TXB.TITLE">
-        <Setter Property="Text" Value="ColorSpoid"/>
+        <Setter Property="Text" Value=" COLOR PICKER"/>
         <Setter Property="VerticalAlignment" Value="Center"/>
         <Setter Property="Margin" Value="10 0 10 0"/>
         <Setter Property="Foreground" Value="#FFFFFF"/>
         <Setter Property="IsHitTestVisible" Value="False"/>
+        <Setter Property="FontSize" Value="13"/>
     </Style>
 
     <DataTemplate x:Key="TITLE">
         <TextBlock Style="{StaticResource TXB.TITLE}"/>
     </DataTemplate>
 
-    <Style TargetType="{x:Type views:ColorSpoid}" BasedOn="{StaticResource {x:Type ctrls:Explorer}}">
+    <Style TargetType="{x:Type views:ColorPicker}" BasedOn="{StaticResource {x:Type ctrls:Explorer}}">
         <Setter Property="Title" Value="Color Spoid"/>
         <Setter Property="TitleTemplate" Value="{StaticResource TITLE}"/>
         <Setter Property="ContentTemplate">

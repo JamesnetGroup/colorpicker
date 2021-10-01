@@ -5,7 +5,6 @@
         None,
         Close,
         Minimize,
-        Maximize,
         EyedropperVariant,
         ContentPaste,
         AlphaR,

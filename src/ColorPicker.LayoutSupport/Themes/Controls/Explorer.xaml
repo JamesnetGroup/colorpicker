@@ -4,6 +4,8 @@
 					xmlns:prims="clr-namespace:ColorPicker.Controls.Primitives;assembly=ColorPicker.Controls">
 
     <Style TargetType="{x:Type Button}" x:Key="BTN.MIN">
+        <Setter Property="Command" Value="{Binding MinimizeCommand}"/>
+        <Setter Property="CommandParameter" Value="{Binding RelativeSource={RelativeSource Self}}"/>
         <Setter Property="Background" Value="Transparent"/>
         <Setter Property="Foreground" Value="#DDDDDD"/>
         <Setter Property="Margin" Value="0"/>
@@ -22,38 +24,7 @@
                             <Setter Property="Foreground" Value="#FFFFFF"/>
                         </Trigger>
                         <Trigger Property="IsPressed" Value="True">
-                            <Setter Property="Background" Value="#C75050"/>
-                            <Setter Property="Foreground" Value="#FFFFFF"/>
-                        </Trigger>
-                        <Trigger Property="IsEnabled" Value="False">
-                            <Setter Property="Opacity" Value="0.3"/>
-                        </Trigger>
-                    </ControlTemplate.Triggers>
-                </ControlTemplate>
-            </Setter.Value>
-        </Setter>
-    </Style>
-
-    <Style TargetType="{x:Type Button}" x:Key="BTN.MAX">
-        <Setter Property="Background" Value="Transparent"/>
-        <Setter Property="Foreground" Value="#DDDDDD"/>
-        <Setter Property="Margin" Value="0"/>
-        <Setter Property="Padding" Value="10"/>
-        <Setter Property="Template">
-            <Setter.Value>
-                <ControlTemplate TargetType="{x:Type Button}">
-                    <Border Background="{TemplateBinding Background}"
-							Padding="{TemplateBinding Padding}">
-                        <ctrls:FlowIcon IconType="Maximize" 
-                                        Fill="{TemplateBinding Foreground}"/>
-                    </Border>
-                    <ControlTemplate.Triggers>
-                        <Trigger Property="IsMouseOver" Value="True">
-                            <Setter Property="Background" Value="#3665B3"/>
-                            <Setter Property="Foreground" Value="#FFFFFF"/>
-                        </Trigger>
-                        <Trigger Property="IsPressed" Value="True">
-                            <Setter Property="Background" Value="#C75050"/>
+                            <Setter Property="Background" Value="#184694"/>
                             <Setter Property="Foreground" Value="#FFFFFF"/>
                         </Trigger>
                         <Trigger Property="IsEnabled" Value="False">
@@ -136,18 +107,16 @@
                                 <ColumnDefinition Width="*"/>
                                 <ColumnDefinition Width="Auto"/>
                                 <ColumnDefinition Width="Auto"/>
-                                <ColumnDefinition Width="Auto"/>
                             </Grid.ColumnDefinitions>
 
                             <prims:DraggableBar x:Name="PART_DragBar" Style="{StaticResource BAR.DRAGGABLE}"/>
 
                             <ContentPresenter ContentSource="DataContext" ContentTemplate="{TemplateBinding TitleTemplate}"/>
                             <Button Grid.Column="1" Style="{StaticResource BTN.MIN}"/>
-                            <Button Grid.Column="2" Style="{StaticResource BTN.MAX}"/>
-                            <Button Grid.Column="3" Style="{StaticResource BTN.CLOSE}" x:Name="PART_CloseButton"/>
+                            <Button Grid.Column="2" Style="{StaticResource BTN.CLOSE}" x:Name="PART_CloseButton"/>
 
                             <ContentPresenter Grid.Row="1" 
-											  Grid.ColumnSpan="4" 
+											  Grid.ColumnSpan="3" 
 											  ContentSource="DataContext" 
 											  ContentTemplate="{TemplateBinding ContentTemplate}"/>
                         </Grid>

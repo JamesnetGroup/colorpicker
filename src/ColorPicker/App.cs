@@ -15,9 +15,9 @@ namespace ColorPicker
             while (dialogResult)
             {
                 ShutdownMode = ShutdownMode.OnExplicitShutdown;
-                ColorSpoid main = new()
+                Main.UI.Views.ColorPicker main = new()
                 {
-                    DataContext = new ColorSpoidViewModel()
+                    DataContext = new ColorPickerViewModel()
                 };
                 _ = main.ShowDialog();
                 dialogResult = (bool)main.DialogResult;

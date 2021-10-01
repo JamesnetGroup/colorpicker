@@ -53,7 +53,6 @@ namespace ColorPicker.Controls.Primitives
             {
                 case GeoIcon.Close: icon.Data = IconData.CLOSE.ToGeometry(); break;
                 case GeoIcon.Minimize: icon.Data = IconData.MINIMIZE.ToGeometry(); break;
-                case GeoIcon.Maximize: icon.Data = IconData.MAXIMIZE.ToGeometry(); break;
                 case GeoIcon.EyedropperVariant: icon.Data = IconData.EYEDROPPER_VARIANT.ToGeometry(); break;
                 case GeoIcon.ContentPaste: icon.Data = IconData.CONTENTPASTE.ToGeometry(); break;
                 case GeoIcon.AlphaR: icon.Data = IconData.ALPHA_R.ToGeometry(); break;

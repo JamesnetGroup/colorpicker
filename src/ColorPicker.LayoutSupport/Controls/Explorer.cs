@@ -8,7 +8,6 @@ using ColorPicker.Data;
 using ColorPicker.Foundation.Wpf;
 using ColorPicker.Controls.Primitives;
 
-
 namespace ColorPicker.LayoutSupport.Controls
 {
     public class Explorer : FlowWindow
