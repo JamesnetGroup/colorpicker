@@ -61,7 +61,7 @@ namespace ColorPicker.LayoutSupport.Controls
         {
             if (GetTemplateChild("PART_CloseButton") is Button btn)
             {
-                //btn.Click += (s, e) => Close();
+                btn.Click += (s, e) => Window.GetWindow(this)?.Close();
             }
             if (GetTemplateChild("PART_DragBar") is DraggableBar bar)
             {

@@ -32,7 +32,6 @@ namespace ColorPicker.Main.UI.Views
             DataContext = new ColorPickerViewModel();
             return new EmptyWindow(this).ShowDialog();
         }
-    }
         #endregion
     }
 }
