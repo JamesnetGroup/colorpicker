@@ -29,6 +29,7 @@
 ## 1. 소개
 
 ![image](https://user-images.githubusercontent.com/52397976/135721690-4de6f12f-645e-44e5-97fb-a780202c7583.png)
+
 **ColorPicker**는 윈도우 운영체제에서 원하는 색상을 손쉽게 캡쳐하거나 원하는 색상을 조합하여 **Hex**값으로 추출하는 기능 등을 제공하는 유틸리티 프로그램입니다.
 <br />
 
