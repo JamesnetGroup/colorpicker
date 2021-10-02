@@ -19,8 +19,8 @@
 <br />
 
 ## Contents
-- 프로젝트 구조(#프로젝트-구조)
-- 스크린샷(#스크린샷)
+- [프로젝트 구조](#프로젝트-구조)
+- [스크린샷](#스크린샷)
   
 ## 프로젝트 구조
 ![image](https://user-images.githubusercontent.com/74305823/135589457-7fe483bb-387d-4987-93c3-a2900cc5bbe2.png)
