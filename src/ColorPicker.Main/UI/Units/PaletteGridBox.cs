@@ -12,5 +12,13 @@ namespace ColorPicker.Main.UI.Units
             DefaultStyleKeyProperty.OverrideMetadata(typeof(PaletteGridBox), new FrameworkPropertyMetadata(typeof(PaletteGridBox)));
         }
         #endregion
+
+        #region GetContainerForItemOverride
+
+        protected override DependencyObject GetContainerForItemOverride()
+        {
+            return new PaletteGridBoxItem();
+        }
+        #endregion
     }
 }
