@@ -82,15 +82,15 @@
                                      Columns="1" 
                                      Margin="10 30 80 0">
                             <ctrls:ColorSlider x:Name="red" 
-                                               Tag="Red" 
+                                               Tag="R" 
                                                Value="{Binding Red}"
                                                Margin="0 2"/>
                             <ctrls:ColorSlider x:Name="green"
-                                               Tag="Green"
+                                               Tag="G"
                                                Value="{Binding Green}"
                                                Margin="0 2"/>
                             <ctrls:ColorSlider x:Name="blue" 
-                                               Tag="Blue"
+                                               Tag="B"
                                                Value="{Binding Blue}"
                                                Margin="0 2"/>
                         </UniformGrid>

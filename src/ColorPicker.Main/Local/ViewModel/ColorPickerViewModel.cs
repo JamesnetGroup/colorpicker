@@ -179,8 +179,10 @@ namespace ColorPicker.Main.Local.ViewModel
         #region ColorSelected
 
         private void ColorSelected(ColorStampModel color)
-        {
-            ExtractColor(new ColorStruct(color.Red, color.Green, color.Blue, (byte)255));
+        {if (color != null)
+            {
+                ExtractColor(new ColorStruct(color.Red, color.Green, color.Blue, (byte)255));
+            }
         }
         #endregion
 
