@@ -13,7 +13,7 @@
    <a href="https://github.com/devncore/colorpicker/stargazers"><img src="https://img.shields.io/github/stars/devncore/colorpicker" alt="Github Stars"></a>
    <img src="https://img.shields.io/github/license/devncore/colorpicker" alt="License">
    <a href="https://github.com/devncore/colorpicker/pulse"><img src="https://img.shields.io/github/commit-activity/m/devncore/colorpicker" alt="Commits-per-month"></a>
- </p>
+  </p>
 </div>
 
 <br />
