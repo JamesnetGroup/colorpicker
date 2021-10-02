@@ -7,7 +7,7 @@ namespace ColorPicker
         [STAThread]
         public static void Main(string[] args)
         {
-            new App().Run();
+            _ = new App().Run();
         }
     }
 }
