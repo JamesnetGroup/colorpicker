@@ -28,6 +28,8 @@
 
 ## 1. 소개
 
+![image](https://user-images.githubusercontent.com/52397976/135721690-4de6f12f-645e-44e5-97fb-a780202c7583.png)
+
 <br />
 
 ## 2. 개발환경
