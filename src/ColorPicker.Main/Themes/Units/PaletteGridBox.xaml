@@ -10,6 +10,7 @@
         <Setter Property="BorderThickness" Value="0"/>
         <Setter Property="VerticalAlignment" Value="Top"/>
         <Setter Property="Background" Value="#FF232323"/>
+        <Setter Property="SelectionCommand" Value="{Binding ColorClickCommand}"/>
         <Setter Property="ItemsSource" Value="{Binding ExtractedColorSet}"/>
         <Setter Property="Template">
             <Setter.Value>

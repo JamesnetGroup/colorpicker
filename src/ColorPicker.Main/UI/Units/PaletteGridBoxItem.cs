@@ -1,5 +1,6 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Input;
 
 namespace ColorPicker.Main.UI.Units
 {
@@ -11,6 +12,6 @@ namespace ColorPicker.Main.UI.Units
         {
             DefaultStyleKeyProperty.OverrideMetadata(typeof(PaletteGridBoxItem), new FrameworkPropertyMetadata(typeof(PaletteGridBoxItem)));
         }
-        #endregion
+        #endregion  
     }
 }

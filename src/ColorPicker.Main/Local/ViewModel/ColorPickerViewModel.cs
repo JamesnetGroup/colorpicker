@@ -34,6 +34,7 @@ namespace ColorPicker.Main.Local.ViewModel
 
         public ICommand PasteCommand { get; }
         public ICommand CaptureCommand { get; }
+        public ICommand ColorClickCommand { get; }
         #endregion
 
         #region CaptureImage
@@ -121,6 +122,7 @@ namespace ColorPicker.Main.Local.ViewModel
 
         public ColorPickerViewModel()
         {
+            ColorClickCommand = new RelayCommand<ColorStampModel>(ColorSelected);
             CaptureCommand = new RelayCommand<object>(BeginCapture);
             PasteCommand = new RelayCommand<object>(Paste);
             MinimizeCommand = new RelayCommand<object>(DoMinimizing);
@@ -205,7 +207,7 @@ namespace ColorPicker.Main.Local.ViewModel
             Green = rgba.Green;
             Blue = rgba.Blue;
 
-            ExtractedColorSet.Insert(rgba, ColorSelected);
+            ExtractedColorSet.Insert(rgba);
 
             IsCaptureActivated = false;
         }

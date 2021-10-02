@@ -8,17 +8,14 @@ namespace ColorPicker.Main.Local.Collection
 {
     public class ExtractedColorCollection : ObservableCollection<ColorStampModel>
     {
-        private RelayCommand<ColorStampModel> colorExtracted;
 
         #region Insert
 
-        internal void Insert(ColorStruct rgba, Action<ColorStampModel> command)
+        internal void Insert(ColorStruct rgba)
         {
-            colorExtracted ??= new RelayCommand<ColorStampModel>(command);
-
             if (this.FirstOrDefault(x => x.HexColor == ConvertColor.Hex(rgba)) is null)
             {
-                Insert(0, new ColorStampModel(rgba, colorExtracted));
+                Insert(0, new ColorStampModel(rgba));
             }
             RemoveLast();
         }

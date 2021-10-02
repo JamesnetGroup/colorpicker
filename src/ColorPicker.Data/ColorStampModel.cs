@@ -9,15 +9,13 @@ namespace ColorPicker.Data
         public byte Red { get; set; }
         public byte Green { get; set; }
         public byte Blue { get; set; }
-        public ICommand ColorClickCommand { get; set; }
 
-        public ColorStampModel(ColorStruct rgba, ICommand command)
+        public ColorStampModel(ColorStruct rgba)
         {
             HexColor = ConvertColor.Hex(rgba);
             Red = rgba.Red;
             Green = rgba.Green;
             Blue = rgba.Blue;
-            ColorClickCommand = command;
         }
     }
 }

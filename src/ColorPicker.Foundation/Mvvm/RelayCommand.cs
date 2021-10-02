@@ -5,30 +5,23 @@ namespace ColorPicker.Foundation.Mvvm
 {
     public class RelayCommand<T> : ICommand
     {
-        private readonly Action<T>? _execute;
-        private readonly Predicate<T>? _canExecute;
+        #region Variables
+
+        private readonly Action<T> _execute = null;
+        private readonly Predicate<T> _canExecute = null;
+        #endregion
 
         #region Constructors
 
         public RelayCommand(Action<T> execute)
             : this(execute, null)
         {
-            _execute = null;
-            _canExecute = null;
         }
-        
-        public RelayCommand(Action<T> execute, Predicate<T>? canExecute)
+
+        public RelayCommand(Action<T> execute, Predicate<T> canExecute)
         {
             _execute = execute ?? throw new ArgumentNullException("execute");
             _canExecute = canExecute;
-        }
-        #endregion
-
-        #region Execute
-
-        public void Execute(object parameter)
-        {
-            _execute.Invoke((T)parameter);
         }
         #endregion
 
@@ -46,6 +39,14 @@ namespace ColorPicker.Foundation.Mvvm
         {
             add { CommandManager.RequerySuggested += value; }
             remove { CommandManager.RequerySuggested -= value; }
+        }
+        #endregion
+
+        #region Execute
+
+        public void Execute(object parameter)
+        {
+            _execute((T)parameter);
         }
         #endregion
     }

@@ -2,18 +2,17 @@
 					xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 					xmlns:units="clr-namespace:ColorPicker.Main.UI.Units">
 
-    <Style TargetType="{x:Type Button}" x:Key="BTN">
-        <Setter Property="Command" Value="{Binding ColorClickCommand}"/>
-        <Setter Property="CommandParameter" Value="{Binding}"/>
+    <Style TargetType="{x:Type Control}" x:Key="BOX">
         <Setter Property="Template">
             <Setter.Value>
-                <ControlTemplate TargetType="{x:Type Button}">
+                <ControlTemplate TargetType="{x:Type Control}">
                     <Border Margin="0 0 1 1" 
                             Background="{Binding HexColor}" 
                             ToolTip="{Binding HexColor}"                                                      
                             UseLayoutRounding="True" 
                             SnapsToDevicePixels="True" 
                             Width="20"
+                            Cursor="Hand"
                             Height="20"/>
                 </ControlTemplate>
             </Setter.Value>
@@ -24,13 +23,7 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type units:PaletteGridBoxItem}">
-                    <Button x:Name="btn" 
-                            Style="{StaticResource BTN}"/>
-                    <ControlTemplate.Triggers>
-                        <DataTrigger Binding="{Binding ElementName=btn, Path=IsMouseOver}" Value="True">
-                            <Setter Property="Cursor" Value="Hand"/>
-                        </DataTrigger>
-                    </ControlTemplate.Triggers>
+                    <Control Style="{StaticResource BOX}"/>
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
