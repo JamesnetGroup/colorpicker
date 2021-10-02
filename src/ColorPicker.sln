@@ -5,21 +5,19 @@ VisualStudioVersion = 17.0.31612.314
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ColorPicker.Main", "ColorPicker.Main\ColorPicker.Main.csproj", "{C74BC40F-B2E0-4644-BDA9-CC5F85210999}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{71351A19-E5AA-4576-B4AC-D3F00357A2AF}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ColorPicker", "ColorPicker\ColorPicker.csproj", "{272743E6-56B2-48A2-A8C5-7D4D88BDB716}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorPicker.Foundation", "ColorPicker.Foundation\ColorPicker.Foundation.csproj", "{970B8156-A86A-4F34-8A6A-FA2BD5930FCC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ColorPicker.Foundation", "ColorPicker.Foundation\ColorPicker.Foundation.csproj", "{970B8156-A86A-4F34-8A6A-FA2BD5930FCC}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Base", "Base", "{DA0C429A-EE78-418A-9920-BEED4FDBACCB}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Based", "Based", "{DA0C429A-EE78-418A-9920-BEED4FDBACCB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorPicker.Data", "ColorPicker.Data\ColorPicker.Data.csproj", "{3C506880-8645-4CCC-908F-CED7494500AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ColorPicker.Data", "ColorPicker.Data\ColorPicker.Data.csproj", "{3C506880-8645-4CCC-908F-CED7494500AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorPicker.LayoutSupport", "ColorPicker.LayoutSupport\ColorPicker.LayoutSupport.csproj", "{8600CCE9-8B79-4D8D-AE2C-662F115F8BFA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ColorPicker.LayoutSupport", "ColorPicker.LayoutSupport\ColorPicker.LayoutSupport.csproj", "{8600CCE9-8B79-4D8D-AE2C-662F115F8BFA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorPicker.Controls", "ColorPicker.Controls\ColorPicker.Controls.csproj", "{84FA0919-377B-4BFC-993D-F4D0B9472A86}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ColorPicker.Controls", "ColorPicker.Controls\ColorPicker.Controls.csproj", "{84FA0919-377B-4BFC-993D-F4D0B9472A86}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorPicker.Converter", "ColorPicker.Converter\ColorPicker.Converter.csproj", "{A7344D50-767F-42E6-924F-EFFB99CD076F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ColorPicker.Converter", "ColorPicker.Converter\ColorPicker.Converter.csproj", "{A7344D50-767F-42E6-924F-EFFB99CD076F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -60,7 +58,7 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{C74BC40F-B2E0-4644-BDA9-CC5F85210999} = {71351A19-E5AA-4576-B4AC-D3F00357A2AF}
+		{C74BC40F-B2E0-4644-BDA9-CC5F85210999} = {DA0C429A-EE78-418A-9920-BEED4FDBACCB}
 		{970B8156-A86A-4F34-8A6A-FA2BD5930FCC} = {DA0C429A-EE78-418A-9920-BEED4FDBACCB}
 		{3C506880-8645-4CCC-908F-CED7494500AC} = {DA0C429A-EE78-418A-9920-BEED4FDBACCB}
 		{8600CCE9-8B79-4D8D-AE2C-662F115F8BFA} = {DA0C429A-EE78-418A-9920-BEED4FDBACCB}

@@ -26,11 +26,6 @@ namespace ColorPicker.Main.UI.Views
             Height = 360;
             //Loaded += (s, e) => Topmost = true;
         }
-
-        public bool? ShowDialog()
-        {
-            return new EmptyWindow(this).ShowDialog();
-        }
         #endregion
     }
 }

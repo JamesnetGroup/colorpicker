@@ -123,5 +123,13 @@ namespace ColorPicker.LayoutSupport.Controls
             }
         }
         #endregion
+
+        #region ShowDialog
+
+        public virtual bool? ShowDialog()
+        {
+            return new EmptyWindow(this).ShowDialog();
+        }
+        #endregion
     }
 }
