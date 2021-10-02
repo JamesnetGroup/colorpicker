@@ -38,6 +38,14 @@
 
 ## 2. 개발환경
   
+> 해당 오픈소스의 주요 개발 환경은 아래와 같습니다. 
+ 
+✔️ **WPF .NET Core** &nbsp; [.NET 6.0 Preview](https://dotnet.microsoft.com/download/dotnet/6.0)
+
+✔️ **Visual Studio 2022 Preview**  
+<br/>
+[![image](https://user-images.githubusercontent.com/52397976/127085632-9af789b0-58bd-4e63-be6c-30f567cf088b.png)](https://devblogs.microsoft.com/visualstudio/visual-studio-2022-preview-1-now-available/)
+
 <br />
 
 ## 프로젝트 구조
