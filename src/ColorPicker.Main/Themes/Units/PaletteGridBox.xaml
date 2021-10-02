@@ -6,14 +6,21 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate>
-                    <Button x:Name="btn" Command="{Binding ColorClickCommand}" CommandParameter="{Binding}">
+                    <Button x:Name="btn" 
+                            Command="{Binding ColorClickCommand}" 
+                            CommandParameter="{Binding}">
                         <Button.Resources>
                             <Style TargetType="{x:Type Button}">
                                 <Setter Property="Template">
                                     <Setter.Value>
                                         <ControlTemplate>
-                                            <Border Margin="0 0 1 1" Background="{Binding HexColor}" ToolTip="{Binding HexColor}"
-                                                       UseLayoutRounding="True" SnapsToDevicePixels="True" Width="20" Height="20"/>
+                                            <Border Margin="0 0 1 1" 
+                                                    Background="{Binding HexColor}" 
+                                                    ToolTip="{Binding HexColor}"                                                      
+                                                    UseLayoutRounding="True" 
+                                                    SnapsToDevicePixels="True" 
+                                                    Width="20"
+                                                    Height="20"/>
                                         </ControlTemplate>
                                     </Setter.Value>
                                 </Setter>
