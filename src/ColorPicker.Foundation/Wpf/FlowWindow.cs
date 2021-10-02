@@ -17,7 +17,7 @@ namespace ColorPicker.Foundation.Wpf
 
         #region UseMvvm
 
-        public IFlowElement UseViewModel(ObservableObject vm)
+        public IFlowElement SetVm(ObservableObject vm)
         {
             DataContext = vm;
             return this;

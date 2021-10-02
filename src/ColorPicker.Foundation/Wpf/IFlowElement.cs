@@ -4,7 +4,7 @@ namespace ColorPicker.Foundation.Wpf
 {
     public interface IFlowElement
     {
-        IFlowElement UseViewModel(ObservableObject vm);
+        IFlowElement SetVm(ObservableObject vm);
         void OnShow();
     }
 }
