@@ -21,6 +21,7 @@
 ## Contents
 - [1. 소개](#1-소개)
 - [2. 개발환경](#2-개발환경)
+- [3. 학습 가이드](#3-학습-가이드)
 - [프로젝트 구조](#프로젝트-구조)
 - [스크린샷](#스크린샷)
   
@@ -48,10 +49,38 @@
 
 <br />
 
+## 3. 학습 가이드
+
+- **숙련자:** C#과 WPF를 접해본 개발자라면 약 2시간 이내에 소스코드 전체를 작성하고 실행시킬 수 있습니다.
+- **초보자:** WPF와 MVVM의 이해가 부족하더라도 약 6시간 이내에 소스코드 전체를 작성하고 실행시킬 수 있습니다.
+
+
+**틱택토**를 통해 학습할 수 있는 기술들은 아래와 같습니다.
+- [x] CustomControl
+- [x] Trigger
+- [x] Mvvm 패턴
+- [x] DataContext
+- [x] RelayCommand
+- [x] Binding
+- [x] RelativeSource TemplatedParent
+- [x] ListBox / ListBoxItem
+- [x] ItemsPresenter
+- [x] ContentPresenter
+- [x] GetContainerForItemOverride
+- [x] OnApplyTemplate
+- [x] Geometry
+- [x] Hex Color
+- [x] Transparent
+- [x] Application
+
+WPF의 중요한 핵심 기술들을 이 앱을 통해 깊이있게 학습할 수 있습니다.
+
+<br />
+
 ## 프로젝트 구조
 ![image](https://user-images.githubusercontent.com/74305823/135589457-7fe483bb-387d-4987-93c3-a2900cc5bbe2.png)
 
-<br>
+<br />
 
 ## 9. 스크린샷
 ![image](https://user-images.githubusercontent.com/74305823/135593932-f5190a51-067b-45a8-93a9-b98e159385d5.png)
