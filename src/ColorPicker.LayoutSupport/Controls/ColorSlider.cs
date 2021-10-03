@@ -18,10 +18,10 @@ namespace ColorPicker.LayoutSupport.Controls
         {
             if (e.LeftButton == MouseButtonState.Pressed)
             {
-                var slider = this;
+                ColorSlider? slider = this;
                 Point position = e.GetPosition(slider);
                 double d = 1.0d / slider.ActualWidth * position.X;
-                var p = slider.Maximum * d;
+                double p = slider.Maximum * d;
                 slider.Value = p;
             }
         }

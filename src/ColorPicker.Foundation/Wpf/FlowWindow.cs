@@ -15,7 +15,7 @@ namespace ColorPicker.Foundation.Wpf
         }
         #endregion
 
-        #region UseMvvm
+        #region SetVm
 
         public IFlowElement SetVm(ObservableObject vm)
         {
