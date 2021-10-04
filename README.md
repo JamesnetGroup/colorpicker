@@ -74,8 +74,6 @@
 - [x] Transparent
 - [x] Application
 
-WPF의 중요한 핵심 기술들을 이 앱을 통해 깊이있게 학습할 수 있습니다.
-
 <br />
 
 ## 프로젝트 구조
