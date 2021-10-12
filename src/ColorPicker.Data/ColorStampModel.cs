@@ -1,6 +1,4 @@
-﻿using System.Windows.Input;
-
-namespace ColorPicker.Data
+﻿namespace ColorPicker.Data
 {
     public class ColorStampModel
     {

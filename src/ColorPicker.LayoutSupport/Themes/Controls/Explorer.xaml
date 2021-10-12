@@ -71,6 +71,7 @@
         <Setter Property="Grid.ColumnSpan" Value="4"/>
         <Setter Property="Background" Value="#222222"/>
     </Style>
+    
     <Style TargetType="{x:Type TextBlock}" x:Key="TXB.TITLE">
         <Setter Property="Text" Value=" COLOR PICKER"/>
         <Setter Property="VerticalAlignment" Value="Center"/>

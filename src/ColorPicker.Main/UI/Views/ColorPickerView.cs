@@ -1,5 +1,4 @@
 ﻿using System.Windows;
-using ColorPicker.Controls.Primitives;
 using ColorPicker.LayoutSupport.Controls;
 using ColorPicker.Main.Local.ViewModel;
 

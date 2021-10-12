@@ -1,14 +1,11 @@
-﻿using System;
-using System.Linq;
+﻿using System.Linq;
 using System.Collections.ObjectModel;
 using ColorPicker.Data;
-using ColorPicker.Foundation.Mvvm;
 
 namespace ColorPicker.Main.Local.Collection
 {
     public class ExtractedColorCollection : ObservableCollection<ColorStampModel>
     {
-
         #region Insert
 
         internal void Insert(ColorStruct rgba)

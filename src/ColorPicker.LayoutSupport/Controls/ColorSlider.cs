@@ -22,7 +22,8 @@ namespace ColorPicker.LayoutSupport.Controls
                 Point position = e.GetPosition(slider);
                 double d = 1.0d / slider.ActualWidth * position.X;
                 double p = slider.Maximum * d;
-                slider.Value = p;
+
+                slider.Value = p < slider.Minimum ? slider.Minimum : p > slider.Maximum ? slider.Maximum : p;
             }
         }
     }
