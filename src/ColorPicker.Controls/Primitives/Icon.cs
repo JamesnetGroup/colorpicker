@@ -9,41 +9,27 @@ namespace ColorPicker.Controls.Primitives
 {
     public class Icon : ContentControl
     {
-        #region DependencyProperties
-
         public static readonly DependencyProperty FillProperty = DependencyProperty.Register("Fill", typeof(Brush), typeof(Icon), new PropertyMetadata(Brushes.White));
         public static readonly DependencyProperty IconTypeProperty = DependencyProperty.Register("IconType", typeof(GeoIcon), typeof(Icon), new PropertyMetadata(GeoIcon.None, IconTypePropertyChanged));
         public static readonly DependencyProperty DataProperty = DependencyProperty.Register("Data", typeof(Geometry), typeof(Icon), new PropertyMetadata(null));
-        #endregion
-
-        #region Fill
 
         public Brush Fill
         {
             get => (Brush)GetValue(FillProperty);
             set => SetValue(FillProperty, value);
         }
-        #endregion
-
-        #region IconType
 
         public GeoIcon IconType
         {
             get => (GeoIcon)GetValue(IconTypeProperty);
             set => SetValue(IconTypeProperty, value);
         }
-        #endregion
-
-        #region Data
 
         public Geometry Data
         {
             get => (Geometry)GetValue(DataProperty);
             set => SetValue(DataProperty, value);
         }
-        #endregion
-
-        #region IconTypePropertyChanged
 
         private static void IconTypePropertyChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
@@ -64,7 +50,6 @@ namespace ColorPicker.Controls.Primitives
                     break;
             }
         }
-        #endregion
     }
 }
 
