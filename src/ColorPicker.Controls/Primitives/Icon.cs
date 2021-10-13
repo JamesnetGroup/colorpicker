@@ -9,9 +9,23 @@ namespace ColorPicker.Controls.Primitives
 {
     public class Icon : ContentControl
     {
-        public static readonly DependencyProperty FillProperty = DependencyProperty.Register("Fill", typeof(Brush), typeof(Icon), new PropertyMetadata(Brushes.White));
-        public static readonly DependencyProperty IconTypeProperty = DependencyProperty.Register("IconType", typeof(GeoIcon), typeof(Icon), new PropertyMetadata(GeoIcon.None, IconTypePropertyChanged));
-        public static readonly DependencyProperty DataProperty = DependencyProperty.Register("Data", typeof(Geometry), typeof(Icon), new PropertyMetadata(null));
+        public static readonly DependencyProperty FillProperty = 
+            DependencyProperty.Register("Fill", 
+                typeof(Brush), 
+                typeof(Icon), 
+                new PropertyMetadata(Brushes.White));
+
+        public static readonly DependencyProperty IconTypeProperty = 
+            DependencyProperty.Register("IconType", 
+                typeof(GeoIcon), 
+                typeof(Icon), 
+                new PropertyMetadata(GeoIcon.None, IconTypePropertyChanged));
+
+        public static readonly DependencyProperty DataProperty = 
+            DependencyProperty.Register("Data", 
+                typeof(Geometry), 
+                typeof(Icon), 
+                new PropertyMetadata(null));
 
         public Brush Fill
         {
