@@ -1,5 +1,6 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Controls.Primitives;
 using System.Windows.Input;
 
 namespace ColorPicker.LayoutSupport.Controls
@@ -14,16 +15,31 @@ namespace ColorPicker.LayoutSupport.Controls
         }
         #endregion
 
-        protected override void OnMouseMove(MouseEventArgs e)
+        public ColorSlider()
         {
-            if (e.LeftButton == MouseButtonState.Pressed)
-            {
-                ColorSlider? slider = this;
-                Point position = e.GetPosition(slider);
-                double d = 1.0d / slider.ActualWidth * position.X;
-                double p = slider.Maximum * d;
+            Loaded += ColorSlider_Loaded;    
+        }
 
-                slider.Value = p < slider.Minimum ? slider.Minimum : p > slider.Maximum ? slider.Maximum : p;
+        private void ColorSlider_Loaded(object sender, RoutedEventArgs e)
+        {
+            Thumb thumb = (this.Template.FindName("PART_Track", this) as Track).Thumb;
+            thumb.MouseEnter += new MouseEventHandler(thumb_MouseEnter);
+        }
+
+        private void thumb_MouseEnter(object sender, MouseEventArgs e)
+        {
+            if (e.LeftButton == MouseButtonState.Pressed
+                && e.MouseDevice.Captured == null)
+            {
+                // the left button is pressed on mouse enter
+                // but the mouse isn't captured, so the thumb
+                // must have been moved under the mouse in response
+                // to a click on the track.
+                // Generate a MouseLeftButtonDown event.
+
+                MouseButtonEventArgs args = new MouseButtonEventArgs(e.MouseDevice, e.Timestamp, MouseButton.Left);
+                args.RoutedEvent = MouseLeftButtonDownEvent;
+                (sender as Thumb).RaiseEvent(args);
             }
         }
     }

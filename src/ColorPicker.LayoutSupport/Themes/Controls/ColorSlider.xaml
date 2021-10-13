@@ -35,16 +35,10 @@
                           HorizontalAlignment="Left"
                           VerticalAlignment="Center"
                           UseLayoutRounding="True">
-                        <!--<Border Background="{Binding RelativeSource={RelativeSource AncestorType=Slider}, Path=Value, 
-                            Converter={cnvts:RgbToHexConverter}, 
-                            ConverterParameter=R}"
-                                CornerRadius="9"
-                                Width="18" 
-                                Height="18"/>-->
                         <TextBlock Text="▲" 
                                    FontSize="9"  
                                    Foreground="#77FFFFFF" 
-                                   Margin="-5 0 0 3"/>
+                                   Margin="-5 18 0 3"/>
                     </Grid>
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsMouseOver" Value="true">
@@ -64,7 +58,6 @@
         <Setter Property="HorizontalAlignment" Value="Stretch"/>
         <Setter Property="VerticalAlignment" Value="Top"/>
         <Setter Property="Margin" Value="0 0 0 0"/>
-        <Setter Property="IsMoveToPointEnabled" Value="True"/>
         <Setter Property="AutoToolTipPlacement" Value="None"/>
         <Setter Property="IsSnapToTickEnabled" Value="True"/>
         <Setter Property="IsMoveToPointEnabled" Value="True"/>
@@ -82,10 +75,11 @@
                 <ControlTemplate TargetType="{x:Type ctrls:ColorSlider}">
                     <Grid>
                         <Grid.RowDefinitions>
-                            <RowDefinition Height="18"/>
                             <RowDefinition Height="Auto"/>
                         </Grid.RowDefinitions>
                         <Border x:Name="border"
+                                VerticalAlignment="Top"
+                                Height="18"
                                 Grid.Row="0"
                                 Background="Transparent"
                                 SnapsToDevicePixels="True">
@@ -103,7 +97,7 @@
                                 </DockPanel>
                             </Grid>
                         </Border>
-                        <Track x:Name="PART_Track" Grid.Row="1">
+                        <Track x:Name="PART_Track">
                             <Track.Thumb>
                                 <Thumb x:Name="thumb" Style="{StaticResource SLD.THUMB}"/>
                             </Track.Thumb>
