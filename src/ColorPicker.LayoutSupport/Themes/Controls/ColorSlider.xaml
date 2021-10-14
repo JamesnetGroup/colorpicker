@@ -74,13 +74,9 @@
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type ctrls:ColorSlider}">
                     <Grid>
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="Auto"/>
-                        </Grid.RowDefinitions>
                         <Border x:Name="border"
                                 VerticalAlignment="Top"
                                 Height="18"
-                                Grid.Row="0"
                                 Background="Transparent"
                                 SnapsToDevicePixels="True">
                             <Grid Height="{Binding RelativeSource={RelativeSource AncestorType=Slider}, Path=MinHeight}">
@@ -99,7 +95,7 @@
                         </Border>
                         <Track x:Name="PART_Track">
                             <Track.Thumb>
-                                <Thumb x:Name="thumb" Style="{StaticResource SLD.THUMB}"/>
+                                <Thumb Style="{StaticResource SLD.THUMB}"/>
                             </Track.Thumb>
                         </Track>
                     </Grid>

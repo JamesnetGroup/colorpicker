@@ -12,16 +12,16 @@ namespace ColorPicker.LayoutSupport.Controls
     {
         #region DependencyProperties
 
-        public static readonly DependencyProperty TitleTemplateProperty = 
-            DependencyProperty.Register("TitleTemplate", 
-                typeof(DataTemplate), 
-                typeof(Explorer), 
+        public static readonly DependencyProperty TitleTemplateProperty =
+            DependencyProperty.Register("TitleTemplate",
+                typeof(DataTemplate),
+                typeof(Explorer),
                 new PropertyMetadata(null));
 
-        public static readonly DependencyProperty SubTitleProperty = 
-            DependencyProperty.Register("SubTitle", 
-                typeof(object), 
-                typeof(Explorer), 
+        public static readonly DependencyProperty SubTitleProperty =
+            DependencyProperty.Register("SubTitle",
+                typeof(object),
+                typeof(Explorer),
                 new PropertyMetadata(null));
 
         #endregion
