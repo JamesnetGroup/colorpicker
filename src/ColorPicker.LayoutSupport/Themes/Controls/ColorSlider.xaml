@@ -1,7 +1,6 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-					xmlns:ctrls="clr-namespace:ColorPicker.LayoutSupport.Controls"
-                    xmlns:cnvts="clr-namespace:ColorPicker.Converter;assembly=ColorPicker.Converter">
+					xmlns:ctrls="clr-namespace:ColorPicker.LayoutSupport.Controls">
 
     <LinearGradientBrush StartPoint="0,0.5" EndPoint="1,0.5" x:Key="LGB.RED">
         <GradientStop Color="#ffffff" Offset="0.0" />
