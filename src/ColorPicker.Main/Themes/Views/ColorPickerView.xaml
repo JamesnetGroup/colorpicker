@@ -48,17 +48,7 @@
         </Setter>
     </Style>
 
-
-
     <Style TargetType="{x:Type views:ColorPickerView}" BasedOn="{StaticResource {x:Type ctrls:Explorer}}">
-        <!--<Setter Property="Title" Value="Color Spoid"/>-->
-        <!--<Setter Property="TitleTemplate" >
-            <Setter.Value>
-                <DataTemplate>
-                    <TextBlock Style="{StaticResource TXB.TITLE}"/>
-                </DataTemplate>
-            </Setter.Value>
-        </Setter>-->
         <Setter Property="ContentTemplate">
             <Setter.Value>
                 <DataTemplate>
