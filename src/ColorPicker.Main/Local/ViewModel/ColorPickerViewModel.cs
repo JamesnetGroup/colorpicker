@@ -215,7 +215,6 @@ namespace ColorPicker.Main.Local.ViewModel
         }
         #endregion
 
-        #region Paste
 
         private void Paste(object obj)
         {
@@ -224,24 +223,17 @@ namespace ColorPicker.Main.Local.ViewModel
                 Clipboard.SetText(CurrentColor);
             }
         }
-        #endregion
-
-        #region Window_Closed
 
         private void Window_Closed(object sender, EventArgs e)
         {
             FlowConfig.SaveSpoidColor(CurrentColor);
             Window.GetWindow(this.UIView).Close();
         }
-        #endregion
-
-        #region DoMinimizing
 
         private void DoMinimizing(object ui)
         {
             Window.GetWindow((UIElement)ui).WindowState = WindowState.Minimized;
         }
-        #endregion
     }
 }
 

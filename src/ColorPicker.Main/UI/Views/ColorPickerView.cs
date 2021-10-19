@@ -19,11 +19,8 @@ namespace ColorPicker.Main.UI.Views
         public ColorPickerView()
         {
             DataContext = new ColorPickerViewModel();
-            //IsFixedSize = true;
-            //ResizeMode = ResizeMode.NoResize;
             Width = 400;
             Height = 360;
-            //Loaded += (s, e) => Topmost = true;
         }
         #endregion
     }
