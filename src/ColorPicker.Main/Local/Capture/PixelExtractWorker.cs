@@ -12,7 +12,7 @@ namespace ColorPicker.Main.Local.Capture
 
         // 임시 버퍼의 graphic 타입
         private readonly Bitmap buffer = new(1, 1);
-        private readonly Graphics? buffer_graphics = null;
+        private readonly Graphics buffer_graphics = null;
         private int count = 0;
         private IKeyboardMouseEvents globalMouseHook;
         public Action<ColorStruct> StartExtract = (p) => { };
