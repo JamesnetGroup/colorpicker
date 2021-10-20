@@ -7,4 +7,8 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ColorPicker.Main\ColorPicker.Main.csproj" />
+  </ItemGroup>
+
 </Project>
