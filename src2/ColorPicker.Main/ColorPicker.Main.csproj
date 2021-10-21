@@ -6,4 +6,15 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Themes\Units\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="Themes\Views\ColorPickerVIew.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+
 </Project>
