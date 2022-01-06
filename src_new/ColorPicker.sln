@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31612.314
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ColorPicker", "ColorPicker\ColorPicker.csproj", "{272743E6-56B2-48A2-A8C5-7D4D88BDB716}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DevNcore", "DevNcore", "{C8576804-79C2-4967-A786-7A682FBAE80D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DevNcore.UI.Design", "DevNcore.UI.Design\DevNcore.UI.Design.csproj", "{37083670-03EF-4F56-B115-0136B9925705}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DevNcore.WPF", "DevNcore.WPF\DevNcore.WPF.csproj", "{2CAD2CA7-7261-41AB-B491-2523B88874F5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DevNcore.UI.Design.Geometry", "DevNcore.UI.Design.Geometry\DevNcore.UI.Design.Geometry.csproj", "{F4B02E92-D051-4B9E-8316-A692BE10F974}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DevNcore.UI.Foundation", "DevNcore.UI.Foundation\DevNcore.UI.Foundation.csproj", "{F5AE65E1-1A0B-4B37-ABFC-04FC07E8A14C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DevNcore.UI.Data", "DevNcore.UI.Data\DevNcore.UI.Data.csproj", "{BF355AF2-89E2-4CDA-9392-92A8A758D124}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{272743E6-56B2-48A2-A8C5-7D4D88BDB716}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{272743E6-56B2-48A2-A8C5-7D4D88BDB716}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{272743E6-56B2-48A2-A8C5-7D4D88BDB716}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{272743E6-56B2-48A2-A8C5-7D4D88BDB716}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37083670-03EF-4F56-B115-0136B9925705}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37083670-03EF-4F56-B115-0136B9925705}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37083670-03EF-4F56-B115-0136B9925705}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37083670-03EF-4F56-B115-0136B9925705}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CAD2CA7-7261-41AB-B491-2523B88874F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CAD2CA7-7261-41AB-B491-2523B88874F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CAD2CA7-7261-41AB-B491-2523B88874F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CAD2CA7-7261-41AB-B491-2523B88874F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4B02E92-D051-4B9E-8316-A692BE10F974}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4B02E92-D051-4B9E-8316-A692BE10F974}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4B02E92-D051-4B9E-8316-A692BE10F974}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4B02E92-D051-4B9E-8316-A692BE10F974}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5AE65E1-1A0B-4B37-ABFC-04FC07E8A14C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5AE65E1-1A0B-4B37-ABFC-04FC07E8A14C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5AE65E1-1A0B-4B37-ABFC-04FC07E8A14C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5AE65E1-1A0B-4B37-ABFC-04FC07E8A14C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF355AF2-89E2-4CDA-9392-92A8A758D124}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF355AF2-89E2-4CDA-9392-92A8A758D124}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF355AF2-89E2-4CDA-9392-92A8A758D124}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF355AF2-89E2-4CDA-9392-92A8A758D124}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{37083670-03EF-4F56-B115-0136B9925705} = {C8576804-79C2-4967-A786-7A682FBAE80D}
+		{2CAD2CA7-7261-41AB-B491-2523B88874F5} = {C8576804-79C2-4967-A786-7A682FBAE80D}
+		{F4B02E92-D051-4B9E-8316-A692BE10F974} = {C8576804-79C2-4967-A786-7A682FBAE80D}
+		{F5AE65E1-1A0B-4B37-ABFC-04FC07E8A14C} = {C8576804-79C2-4967-A786-7A682FBAE80D}
+		{BF355AF2-89E2-4CDA-9392-92A8A758D124} = {C8576804-79C2-4967-A786-7A682FBAE80D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1E74BECC-4B8C-41D3-94D6-CD4172657022}
+	EndGlobalSection
+EndGlobal

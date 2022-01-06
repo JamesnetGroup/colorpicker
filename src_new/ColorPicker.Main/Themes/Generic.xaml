@@ -1,0 +1,10 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="/ColorPicker.Main;component/Themes/Units/ExtractColorBox.xaml"/>
+        <ResourceDictionary Source="/ColorPicker.Main;component/Themes/Units/PaletteGridBoxItem.xaml"/>
+        <ResourceDictionary Source="/ColorPicker.Main;component/Themes/Units/PaletteGridBox.xaml"/>
+        <ResourceDictionary Source="/ColorPicker.Main;component/Themes/Views/ColorPickerView.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+</ResourceDictionary>

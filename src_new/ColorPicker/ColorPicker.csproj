@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ColorPicker.Main\ColorPicker.Main.csproj" />
+    <ProjectReference Include="..\DevNcore.UI.Design\DevNcore.UI.Design.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Local\Data\" />
+    <Folder Include="Local\Mvvm\" />
+    <Folder Include="Themes\" />
+  </ItemGroup>
+
+</Project>
