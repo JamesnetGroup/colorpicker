@@ -1,8 +1,0 @@
-<ResourceDictionary
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
-    <ResourceDictionary.MergedDictionaries>
-        <ResourceDictionary Source="/ColorPicker.LayoutSupport;component/Themes/Controls/FlowIcon.xaml"/>
-        <ResourceDictionary Source="/ColorPicker.LayoutSupport;component/Themes/Controls/ColorSlider.xaml"/>
-        <ResourceDictionary Source="/ColorPicker.LayoutSupport;component/Themes/Controls/Explorer.xaml"/>
-    </ResourceDictionary.MergedDictionaries>
-</ResourceDictionary>
