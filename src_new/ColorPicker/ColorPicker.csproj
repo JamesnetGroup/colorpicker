@@ -8,14 +8,22 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ColorPicker.Main\ColorPicker.Main.csproj" />
-    <ProjectReference Include="..\DevNcore.UI.Design\DevNcore.UI.Design.csproj" />
+    <Compile Remove="Local\Mvvm\**" />
+    <EmbeddedResource Remove="Local\Mvvm\**" />
+    <None Remove="Local\Mvvm\**" />
+    <Page Remove="Local\Mvvm\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Local\Data\" />
-    <Folder Include="Local\Mvvm\" />
-    <Folder Include="Themes\" />
+    <PackageReference Include="MouseKeyHook" Version="5.6.0" />
+    <PackageReference Include="System.Drawing.Common" Version="6.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\DevNcore.UI.Design\DevNcore.UI.Design.csproj" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<FrameworkReference Include="Microsoft.WindowsDesktop.App" />
+	</ItemGroup>
 </Project>
