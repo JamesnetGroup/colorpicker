@@ -13,10 +13,29 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\DevNcore.UI.Data\DevNcore.UI.Data.csproj" />
+    <ProjectReference Include="..\DevNcore.UI.Design.Geometry\DevNcore.UI.Design.Geometry.csproj" />
     <ProjectReference Include="..\DevNcore.UI.Design\DevNcore.UI.Design.csproj" />
+    <ProjectReference Include="..\DevNcore.UI.Foundation\DevNcore.UI.Foundation.csproj" />
+    <ProjectReference Include="..\DevNcore.WPF\DevNcore.WPF.csproj" />
   </ItemGroup>
 
 	<ItemGroup>
 		<FrameworkReference Include="Microsoft.WindowsDesktop.App" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Page Update="Themes\Units\PaletteGridBox.xaml">
+	    <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+	    <SubType>Designer</SubType>
+	  </Page>
+	  <Page Update="Themes\Units\PaletteGridBoxItem.xaml">
+	    <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+	    <SubType>Designer</SubType>
+	  </Page>
+	  <Page Update="Themes\Views\MainWindow.xaml">
+	    <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+	    <SubType>Designer</SubType>
+	  </Page>
 	</ItemGroup>
 </Project>

@@ -2,13 +2,20 @@
 
   <PropertyGroup>
     <TargetFramework>net6.0-windows</TargetFramework>
-    <Nullable>enable</Nullable>
+    <Nullable>disable</Nullable>
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\DevNcore.UI.Data\DevNcore.UI.Data.csproj" />
     <ProjectReference Include="..\DevNcore.WPF\DevNcore.WPF.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="Themes\Controls\Explorer.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      <SubType>Designer</SubType>
+    </Page>
   </ItemGroup>
 
 </Project>

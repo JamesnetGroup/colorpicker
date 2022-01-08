@@ -1,4 +1,5 @@
 ﻿using System.Windows;
+using ColorPicker.Local.Mvvm;
 using DevNcore.UI.Design.Controls.Primitives;
 
 namespace ColorPicker.UI.Views
@@ -17,7 +18,7 @@ namespace ColorPicker.UI.Views
 
         public MainWindow()
         {
-            //DataContext = new ColorPickerViewModel();
+            DataContext = new MainViewModel();
             Width = 400;
             Height = 360;
         }

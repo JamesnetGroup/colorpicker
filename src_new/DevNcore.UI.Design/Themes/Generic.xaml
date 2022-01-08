@@ -4,6 +4,8 @@
     xmlns:prims="clr-namespace:DevNcore.UI.Design.Controls.Primitives"
     xmlns:icons="clr-namespace:DevNcore.UI.Design.Controls">
     <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="/DevNcore.UI.Design;component/Themes/Controls/ColorSlider.xaml"/>
+        <ResourceDictionary Source="/DevNcore.UI.Design;component/Themes/Controls/Explorer.xaml"/>
         <ResourceDictionary Source="/DevNcore.UI.Design.Geometry;component/Themes/Packages.xaml"/>
     </ResourceDictionary.MergedDictionaries>
 
@@ -49,5 +51,20 @@
     </Style>
     <Style TargetType="{x:Type icons:PasteIcon}" BasedOn="{StaticResource {x:Type prims:Icon}}">
         <Setter Property="Data" Value="{StaticResource Paste}"/>
+    </Style>
+    <Style TargetType="{x:Type icons:MinimizeIcon}" BasedOn="{StaticResource {x:Type prims:Icon}}">
+        <Setter Property="Data" Value="{StaticResource Minimize}"/>
+    </Style>
+    <Style TargetType="{x:Type icons:CloseIcon}" BasedOn="{StaticResource {x:Type prims:Icon}}">
+        <Setter Property="Data" Value="{StaticResource Close}"/>
+    </Style>
+    <Style TargetType="{x:Type icons:AlphaRIcon}" BasedOn="{StaticResource {x:Type prims:Icon}}">
+        <Setter Property="Data" Value="{StaticResource AlphaR}"/>
+    </Style>
+    <Style TargetType="{x:Type icons:AlphaGIcon}" BasedOn="{StaticResource {x:Type prims:Icon}}">
+        <Setter Property="Data" Value="{StaticResource AlphaG}"/>
+    </Style>
+    <Style TargetType="{x:Type icons:AlphaBIcon}" BasedOn="{StaticResource {x:Type prims:Icon}}">
+        <Setter Property="Data" Value="{StaticResource AlphaB}"/>
     </Style>
 </ResourceDictionary>
