@@ -3,16 +3,9 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net6.0-windows</TargetFramework>
-    <Nullable>enable</Nullable>
+    <Nullable>disable</Nullable>
     <UseWPF>true</UseWPF>
   </PropertyGroup>
-
-  <ItemGroup>
-    <Compile Remove="Local\Mvvm\**" />
-    <EmbeddedResource Remove="Local\Mvvm\**" />
-    <None Remove="Local\Mvvm\**" />
-    <Page Remove="Local\Mvvm\**" />
-  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="MouseKeyHook" Version="5.6.0" />

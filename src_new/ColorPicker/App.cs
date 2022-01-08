@@ -18,7 +18,7 @@ namespace ColorPicker
             //Environment.Exit(0);
 
             base.OnStartup(e);
-            Resources.MergedDictionaries.Add(new ResourceDictionary { Source = new Uri("/DevNcore.UI.Design.Geometry;component/Themes/Packages.xaml", UriKind.RelativeOrAbsolute) });
+            //Resources.MergedDictionaries.Add(new ResourceDictionary { Source = new Uri("/DevNcore.UI.Design.Geometry;component/Themes/Packages.xaml", UriKind.RelativeOrAbsolute) });
             var win = new MainWindow();
 
             win.ShowDialog();

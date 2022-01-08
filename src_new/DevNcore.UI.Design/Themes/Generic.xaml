@@ -1,7 +1,8 @@
 <ResourceDictionary
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:prims="clr-namespace:DevNcore.UI.Design.Controls.Primitives">
+    xmlns:prims="clr-namespace:DevNcore.UI.Design.Controls.Primitives"
+    xmlns:icons="clr-namespace:DevNcore.UI.Design.Controls">
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="/DevNcore.UI.Design.Geometry;component/Themes/Packages.xaml"/>
     </ResourceDictionary.MergedDictionaries>
@@ -43,4 +44,10 @@
         </Setter>
     </Style>
 
+    <Style TargetType="{x:Type icons:EyedropperIcon}" BasedOn="{StaticResource {x:Type prims:Icon}}">
+        <Setter Property="Data" Value="{StaticResource Eyedropper}"/>
+    </Style>
+    <Style TargetType="{x:Type icons:PasteIcon}" BasedOn="{StaticResource {x:Type prims:Icon}}">
+        <Setter Property="Data" Value="{StaticResource Paste}"/>
+    </Style>
 </ResourceDictionary>
