@@ -6,15 +6,10 @@ namespace ColorPicker.UI.Views
 {
     public class MainWindow : Explorer
     {
-        #region DefaultStyleKey
-
         static MainWindow()
         {
             DefaultStyleKeyProperty.OverrideMetadata(typeof(MainWindow), new FrameworkPropertyMetadata(typeof(MainWindow)));
         }
-        #endregion
-
-        #region Constructor
 
         public MainWindow()
         {
@@ -22,6 +17,5 @@ namespace ColorPicker.UI.Views
             Width = 400;
             Height = 360;
         }
-        #endregion
     }
 }

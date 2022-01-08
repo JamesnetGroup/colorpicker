@@ -7,38 +7,23 @@ namespace DevNcore.WPF.Controls
 {
     public abstract class NcoreWindow : ContentControl, INcoreElement
     {
-        #region Constructor
-
         public NcoreWindow()
         {
             Loaded += NcoreWindow_Loaded;
         }
-        #endregion
-
-        #region SetVm
 
         public INcoreElement SetVm(ObservableObject vm)
         {
             DataContext = vm;
             return this;
         }
-        #endregion
-
-        #region Show
 
         public abstract void OnShow();
-        #endregion
-
-        #region OnDesignerMode
 
         protected virtual void OnDesignerMode()
         {
 
         }
-
-        #endregion
-
-        #region Loaded
 
         private void NcoreWindow_Loaded(object sender, RoutedEventArgs e)
         {
@@ -52,6 +37,5 @@ namespace DevNcore.WPF.Controls
                 vm.ViewRegister(this);
             }
         }
-        #endregion
     }
 }

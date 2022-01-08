@@ -92,15 +92,9 @@
                         </UniformGrid>
 
                         <UniformGrid Grid.Row="3" Grid.Column="1" Columns="1" Margin="110 30 0 0">
-                            <ContentControl Style="{StaticResource ColorContentControlStyle}" 
-                                            Content="{Binding ElementName=red, Path=Value}" 
-                                            Tag="R"/>
-                            <ContentControl Style="{StaticResource ColorContentControlStyle}"
-                                            Content="{Binding ElementName=green, Path=Value}" 
-                                            Tag="G"/>
-                            <ContentControl Style="{StaticResource ColorContentControlStyle}" 
-                                            Content="{Binding ElementName=blue, Path=Value}"
-                                            Tag="B"/>
+                            <ContentControl Style="{StaticResource ColorContentControlStyle}" Content="{Binding ElementName=red, Path=Value}" Tag="R"/>
+                            <ContentControl Style="{StaticResource ColorContentControlStyle}" Content="{Binding ElementName=green, Path=Value}" Tag="G"/>
+                            <ContentControl Style="{StaticResource ColorContentControlStyle}" Content="{Binding ElementName=blue, Path=Value}" Tag="B"/>
                         </UniformGrid>
                     </Grid>
                 </DataTemplate>
