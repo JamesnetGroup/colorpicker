@@ -1,12 +1,7 @@
 ﻿using ColorPicker.Local.Data;
 using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using YamlDotNet.Serialization;
-using YamlDotNet.Serialization.NamingConventions;
 
 namespace ColorPicker.Local.Config
 {
@@ -38,11 +33,11 @@ namespace ColorPicker.Local.Config
                 SaveConfig(new ConfigModel());
             }
 
-            IDeserializer deserializer = new DeserializerBuilder()
-              .WithNamingConvention(CamelCaseNamingConvention.Instance)
-              .Build();
+            //IDeserializer deserializer = new DeserializerBuilder()
+            //  .WithNamingConvention(CamelCaseNamingConvention.Instance)
+            //  .Build();
 
-            Config = deserializer.Deserialize<ConfigModel>(File.ReadAllText(CFG_PATH));
+            //Config = deserializer.Deserialize<ConfigModel>(File.ReadAllText(CFG_PATH));
         }
 
         public static void SaveSpoidColor(string color)
@@ -75,13 +70,13 @@ namespace ColorPicker.Local.Config
 
         private static void SaveConfig(ConfigModel config)
         {
-            ISerializer serializer = new SerializerBuilder()
-                .WithNamingConvention(CamelCaseNamingConvention.Instance)
-                .Build();
+            //ISerializer serializer = new SerializerBuilder()
+            //    .WithNamingConvention(CamelCaseNamingConvention.Instance)
+            //    .Build();
 
-            string yaml = serializer.Serialize(config);
+            //string yaml = serializer.Serialize(config);
 
-            File.WriteAllText(CFG_PATH, yaml);
+            //File.WriteAllText(CFG_PATH, yaml);
         }
     }
 }

@@ -1,16 +1,17 @@
-﻿using ColorPicker.UI.Views;
+﻿
+using ColorPicker.Forms.UI.Views;
+using Jamesnet.Wpf.Controls;
+using Prism.Ioc;
 using System.Windows;
+using Unity;
 
 namespace ColorPicker
 {
-    public class App : Application
+    public class App : JamesApplication
     {
-        protected override void OnStartup(StartupEventArgs e)
+        protected override Window CreateShell()
         {
-            base.OnStartup(e);
-            var win = new MainWindow();
-
-            win.ShowDialog();
+            return Container.Resolve<ColorPickerWindow>();
         }
     }
 }

@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+	<UseWindowsForms>true</UseWindowsForms>
+	<ApplicationIcon>Properties\colorpicker.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="Properties\colorpicker.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.0.0" />
+    <PackageReference Include="DevNcore.UI.Design" Version="1.0.9" />
+    <PackageReference Include="DevNcore.UI.Design.Converter" Version="1.0.9" />
+    <PackageReference Include="DevNcore.UI.Design.Geometry" Version="1.0.9" />
+    <PackageReference Include="DevNcore.UI.Foundation" Version="1.0.9" />
+    <PackageReference Include="DevNcore.WPF" Version="1.0.9" />
+    <PackageReference Include="Jamesnet.Design" Version="1.0.0.1" />
+    <PackageReference Include="Jamesnet.Wpf" Version="1.0.0.1" />
+    <PackageReference Include="MouseKeyHook.NetCore" Version="5.6.1.1" />
+    <PackageReference Include="System.Drawing.Common" Version="6.0.0" />
+    <PackageReference Include="YamlDotNet" Version="11.2.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="Themes\Views\MainWindow.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+
+</Project>

@@ -2,33 +2,17 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net6.0-windows</TargetFramework>
+    <TargetFramework>net7.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
-	<UseWindowsForms>true</UseWindowsForms>
-	<ApplicationIcon>Properties\colorpicker.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="Properties\colorpicker.ico" />
+    <PackageReference Include="Jamesnet.Wpf" Version="1.0.0.2" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="DevNcore.UI.Design" Version="1.0.9" />
-    <PackageReference Include="DevNcore.UI.Design.Converter" Version="1.0.9" />
-    <PackageReference Include="DevNcore.UI.Design.Geometry" Version="1.0.9" />
-    <PackageReference Include="DevNcore.UI.Foundation" Version="1.0.9" />
-    <PackageReference Include="DevNcore.WPF" Version="1.0.9" />
-    <PackageReference Include="MouseKeyHook" Version="5.6.0" />
-    <PackageReference Include="System.Drawing.Common" Version="6.0.0" />
-    <PackageReference Include="YamlDotNet" Version="11.2.1" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Page Update="Themes\Views\MainWindow.xaml">
-      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
-      <SubType>Designer</SubType>
-    </Page>
+    <ProjectReference Include="..\ColorPicker.Forms\ColorPicker.Forms.csproj" />
   </ItemGroup>
 
 </Project>

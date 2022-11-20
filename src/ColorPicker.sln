@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31612.314
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorPicker", "ColorPicker\ColorPicker.csproj", "{32AB2510-3CB2-427B-8F58-C656AADCB88E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ColorPicker", "ColorPicker\ColorPicker.csproj", "{D962A1F7-E6AB-4624-852D-F6B07ECCAF87}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Forms", "Forms", "{7BA6EA92-D899-4C83-A4B7-D670A04A5570}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ColorPicker.Forms", "ColorPicker.Forms\ColorPicker.Forms.csproj", "{903FBAFE-34EF-490F-95B9-0AC150A95C88}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Program", "Program", "{446F929A-9DF5-4F59-9F54-183DAD5DE8EC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,13 +17,21 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{32AB2510-3CB2-427B-8F58-C656AADCB88E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{32AB2510-3CB2-427B-8F58-C656AADCB88E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{32AB2510-3CB2-427B-8F58-C656AADCB88E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{32AB2510-3CB2-427B-8F58-C656AADCB88E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D962A1F7-E6AB-4624-852D-F6B07ECCAF87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D962A1F7-E6AB-4624-852D-F6B07ECCAF87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D962A1F7-E6AB-4624-852D-F6B07ECCAF87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D962A1F7-E6AB-4624-852D-F6B07ECCAF87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{903FBAFE-34EF-490F-95B9-0AC150A95C88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{903FBAFE-34EF-490F-95B9-0AC150A95C88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{903FBAFE-34EF-490F-95B9-0AC150A95C88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{903FBAFE-34EF-490F-95B9-0AC150A95C88}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D962A1F7-E6AB-4624-852D-F6B07ECCAF87} = {446F929A-9DF5-4F59-9F54-183DAD5DE8EC}
+		{903FBAFE-34EF-490F-95B9-0AC150A95C88} = {7BA6EA92-D899-4C83-A4B7-D670A04A5570}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1E74BECC-4B8C-41D3-94D6-CD4172657022}

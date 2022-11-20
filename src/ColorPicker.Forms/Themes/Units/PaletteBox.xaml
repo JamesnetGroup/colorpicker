@@ -1,0 +1,30 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:units="clr-namespace:ColorPicker.Forms.UI.Units">
+
+    <Style TargetType="{x:Type units:PaletteBox}">
+        <Setter Property="Margin" Value="0 0 0 0"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="Background" Value="#FF232323"/>
+        <Setter Property="SelectionCommand" Value="{Binding ColorClickCommand}"/>
+        <Setter Property="ItemsSource" Value="{Binding ExtractedColorSet}"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type units:PaletteBox}">
+                    <ScrollViewer HorizontalScrollBarVisibility="Disabled"
+                                  VerticalScrollBarVisibility="Disabled" 
+                                  BorderThickness="0">
+                        <ItemsPresenter/>
+                    </ScrollViewer>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="ItemsPanel">
+            <Setter.Value>
+                <ItemsPanelTemplate>
+                    <UniformGrid Rows="8" Columns="8"/>
+                </ItemsPanelTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

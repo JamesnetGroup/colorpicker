@@ -1,16 +1,17 @@
-﻿using ColorPicker.Local.Config;
-using ColorPicker.Local.Data;
-using ColorPicker.Local.Worker;
-using DevNcore.UI.Foundation.Mvvm;
+﻿using ColorPicker.Forms.Local.Config;
+using ColorPicker.Forms.Local.Models;
+using ColorPicker.Forms.Local.Worker;
+using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
+using Jamesnet.Wpf.Controls;
 using System;
 using System.Windows;
-using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media.Imaging;
 
-namespace ColorPicker.Local.ViewModel
+namespace ColorPicker.Forms.Local.ViewModels
 {
-    public class MainViewModel : ObservableObject
+    public class ColorPickerMainViewModel : ObservableObject, IViewLoadable
     {
         #region Variables
 
@@ -25,6 +26,7 @@ namespace ColorPicker.Local.ViewModel
         private BitmapSource _captureImage;
 
         private bool IsCaptureActivated;
+        private FrameworkElement _view;
         private readonly PixelExtractWorker Capture;
         #endregion
 
@@ -108,18 +110,11 @@ namespace ColorPicker.Local.ViewModel
         }
         #endregion
 
-        #region Alpha
         public int Alpha { get; set; } = 255;
-        #endregion
-
-        #region ExtractedColorSet
 
         public ExtractedColorCollection ExtractedColorSet { get; set; }
-        #endregion
 
-        #region Constructor
-
-        public MainViewModel()
+        public ColorPickerMainViewModel()
         {
             ColorClickCommand = new RelayCommand<ColorStampModel>(ColorSelected);
             CaptureCommand = new RelayCommand<object>(BeginCapture);
@@ -133,7 +128,7 @@ namespace ColorPicker.Local.ViewModel
                 FinishExtract = () => IsColorCapturing = false
             };
 
-            ColorStruct color = ConvertColor.Parse(ColorConfig.Config.SpoidColor);
+            ColorStruct color = ConvertColor.Parse(/*ColorConfig.Config.SpoidColor*/"#ffffffff");
 
             if (color.Blue < 128)
             {
@@ -152,17 +147,12 @@ namespace ColorPicker.Local.ViewModel
                 }
             }
         }
-
-        #endregion
-
-        #region OnLoaded
-
-        protected override void OnLoaded(object sender, RoutedEventArgs e)
+        
+        public void OnLoaded(IViewable ele)
         {
-            base.OnLoaded(sender, e);
-            Window.GetWindow(View).Closed += Window_Closed;
+            _view = ele.View;
+            Window.GetWindow(_view).Closed += Window_Closed;
         }
-        #endregion
 
         #region RgbChanged
 
@@ -219,14 +209,14 @@ namespace ColorPicker.Local.ViewModel
         {
             if (obj is "COPY")
             {
-                Clipboard.SetText(CurrentColor);
+                System.Windows.Clipboard.SetText(CurrentColor);
             }
         }
 
         private void Window_Closed(object sender, EventArgs e)
         {
             ColorConfig.SaveSpoidColor(CurrentColor);
-            Window.GetWindow(this.View).Close();
+            Window.GetWindow(_view).Close();
         }
 
         private void DoMinimizing(object ui)
