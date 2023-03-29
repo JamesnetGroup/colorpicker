@@ -2,7 +2,7 @@
 using ColorPicker.Forms.UI.Views;
 using Jamesnet.Wpf.Global.Location;
 
-namespace ColorPicker.Settings
+namespace ColorPicker.Properties
 {
     internal class ConnectWireContext : ViewModelLocationScenario
     {

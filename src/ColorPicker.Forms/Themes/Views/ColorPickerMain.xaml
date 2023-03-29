@@ -2,10 +2,7 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:units="clr-namespace:ColorPicker.Forms.UI.Units"
                     xmlns:views="clr-namespace:ColorPicker.Forms.UI.Views"
-                    xmlns:icons="clr-namespace:DevNcore.UI.Design.Controls;assembly=DevNcore.UI.Design"
-                    xmlns:prims="clr-namespace:DevNcore.UI.Design.Controls.Primitives;assembly=DevNcore.UI.Design"
-                    xmlns:based="clr-namespace:Jamesnet.Wpf.Controls;assembly=Jamesnet.Wpf"
-                    xmlns:paths="clr-namespace:Jamesnet.Design.Global.Converters;assembly=Jamesnet.Design">
+                    xmlns:based="clr-namespace:Jamesnet.Wpf.Controls;assembly=Jamesnet.Wpf">
 
     <Style TargetType="{x:Type units:ColorBox}" x:Key="ColorBox">
         <Setter Property="Margin" Value="10 10 5 10"/>

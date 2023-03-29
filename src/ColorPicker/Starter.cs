@@ -1,4 +1,4 @@
-﻿using ColorPicker.Settings;
+﻿using ColorPicker.Properties;
 using System;
 
 namespace ColorPicker

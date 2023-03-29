@@ -3,8 +3,9 @@
                     xmlns:units="clr-namespace:ColorPicker.Forms.UI.Units"
                     xmlns:cnvts="clr-namespace:ColorPicker.Forms.Local.Converters">
 
-    <!--EyeDropperIcon-->
-    <!--PasteIcon-->
+    <Geometry x:Key="EyeDropper">M6.92,19L5,17.08L13.06,9L15,10.94M20.71,5.63L18.37,3.29C18,2.9 17.35,2.9 16.96,3.29L13.84,6.41L11.91,4.5L10.5,5.91L11.92,7.33L3,16.25V21H7.75L16.67,12.08L18.09,13.5L19.5,12.09L17.58,10.17L20.7,7.05C21.1,6.65 21.1,6 20.71,5.63Z</Geometry>
+    <Geometry x:Key="Paste">M19,20H5V4H7V7H17V4H19M12,2A1,1 0 0,1 13,3A1,1 0 0,1 12,4A1,1 0 0,1 11,3A1,1 0 0,1 12,2M19,2H14.82C14.4,0.84 13.3,0 12,0C10.7,0 9.6,0.84 9.18,2H5A2,2 0 0,0 3,4V20A2,2 0 0,0 5,22H19A2,2 0 0,0 21,20V4A2,2 0 0,0 19,2Z</Geometry>
+    
     <Style TargetType="{x:Type Button}" x:Key="SpoidButtonStyle">
         <Setter Property="Command" Value="{Binding CaptureCommand}"/>
         <Setter Property="Margin" Value="10 0 10 0"/>
@@ -13,7 +14,9 @@
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type Button}">
                     <Border Background="Transparent">
-                        <units:GeometryIcon Width="30" Height="30" Fill="#FFC9D1D3"/>
+                        <Viewbox Width="30" Height="30">
+                            <Path Fill="#FFC9D1D3" Data="{StaticResource EyeDropper}"/>
+                        </Viewbox>
                     </Border>
                 </ControlTemplate>
             </Setter.Value>
@@ -29,7 +32,9 @@
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type Button}">
                     <Border Background="Transparent">
-                        <units:GeometryIcon Width="26" Height="26" Fill="#FFC9D1D3" IsHitTestVisible="False"/>
+                        <Viewbox Width="26" Height="26">
+                            <Path Fill="#FFC9D1D3" Data="{StaticResource Paste}"/>
+                        </Viewbox>
                     </Border>
                 </ControlTemplate>
             </Setter.Value>

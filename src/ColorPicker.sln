@@ -9,7 +9,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Forms", "Forms", "{7BA6EA92
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ColorPicker.Forms", "ColorPicker.Forms\ColorPicker.Forms.csproj", "{903FBAFE-34EF-490F-95B9-0AC150A95C88}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Program", "Program", "{446F929A-9DF5-4F59-9F54-183DAD5DE8EC}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Studio", "Studio", "{446F929A-9DF5-4F59-9F54-183DAD5DE8EC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

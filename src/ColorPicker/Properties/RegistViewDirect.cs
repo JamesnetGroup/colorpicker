@@ -3,7 +3,7 @@ using Prism.Ioc;
 using Prism.Modularity;
 using Prism.Regions;
 
-namespace ColorPicker.Settings
+namespace ColorPicker.Properties
 {
     internal class RegistViewDirect : IModule
     {
