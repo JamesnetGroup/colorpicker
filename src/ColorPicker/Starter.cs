@@ -9,8 +9,8 @@ namespace ColorPicker
         private static void Main(string[] args)
         {
             _ = new App()
-                .AddWireDataContext<ConnectWireContext>()
-                .AddInversionModule<RegistViewDirect>()
+                .AddWireDataContext<WireDataContext>()
+                .AddInversionModule<ViewModules>()
                 .Run();
         }
     }

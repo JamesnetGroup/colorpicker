@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ColorPicker.Forms", "ColorP
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Studio", "Studio", "{446F929A-9DF5-4F59-9F54-183DAD5DE8EC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorPicker.Main", "ColorPicker.Main\ColorPicker.Main.csproj", "{9A721525-829E-4B0B-8DAC-CF9FFDB060A9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{903FBAFE-34EF-490F-95B9-0AC150A95C88}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{903FBAFE-34EF-490F-95B9-0AC150A95C88}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{903FBAFE-34EF-490F-95B9-0AC150A95C88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A721525-829E-4B0B-8DAC-CF9FFDB060A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A721525-829E-4B0B-8DAC-CF9FFDB060A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A721525-829E-4B0B-8DAC-CF9FFDB060A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A721525-829E-4B0B-8DAC-CF9FFDB060A9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,6 +38,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{D962A1F7-E6AB-4624-852D-F6B07ECCAF87} = {446F929A-9DF5-4F59-9F54-183DAD5DE8EC}
 		{903FBAFE-34EF-490F-95B9-0AC150A95C88} = {7BA6EA92-D899-4C83-A4B7-D670A04A5570}
+		{9A721525-829E-4B0B-8DAC-CF9FFDB060A9} = {7BA6EA92-D899-4C83-A4B7-D670A04A5570}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1E74BECC-4B8C-41D3-94D6-CD4172657022}

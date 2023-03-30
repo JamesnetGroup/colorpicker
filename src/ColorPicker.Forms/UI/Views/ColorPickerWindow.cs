@@ -9,5 +9,11 @@ namespace ColorPicker.Forms.UI.Views
         {
             DefaultStyleKeyProperty.OverrideMetadata(typeof(ColorPickerWindow), new FrameworkPropertyMetadata(typeof(ColorPickerWindow)));
         }
+
+        public ColorPickerWindow()
+        {
+            Width = 500;
+            Height = 400;
+        }
     }
 }

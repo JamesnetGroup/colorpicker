@@ -8,11 +8,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Jamesnet.Wpf" Version="1.0.0.2" />
+    <PackageReference Include="Jamesnet.Wpf" Version="1.0.0.8" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\ColorPicker.Forms\ColorPicker.Forms.csproj" />
+    <ProjectReference Include="..\ColorPicker.Main\ColorPicker.Main.csproj" />
   </ItemGroup>
 
 </Project>
