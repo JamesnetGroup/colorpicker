@@ -113,7 +113,7 @@ namespace ColorPicker.Main.Local.ViewModels
 
         [RelayCommand]
         private void Minimize(object ui)
-        {
+        { 
             Window.GetWindow((UIElement)ui).WindowState = WindowState.Minimized;
         }
 
