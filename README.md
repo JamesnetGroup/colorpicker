@@ -1,8 +1,6 @@
 ## ColorPicker
 
 이 리포지토리는 개발자와 디자이너가 자주 사용하는 도구 중 하나인 ColorPicker에 대한 리포지토리입니다. <br /> 
-
-<a href="https://github.com/devncore/devncore"><strong>더 알아보기 »</strong></a>
  
 | Star | License | Activity |
 |:----:|:-------:|:--------:|
