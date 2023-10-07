@@ -1,6 +1,6 @@
 ﻿using System.Drawing;
 
-namespace ColorPicker.Main.Local.Models
+namespace ColorPicker.Support.Local.Models
 {
     public struct ColorStruct
     {

@@ -1,6 +1,6 @@
-﻿using ColorPicker.Main.Local.Config;
-using ColorPicker.Main.Local.Models;
-using ColorPicker.Main.Local.Worker;
+﻿using ColorPicker.Support.Local.Config;
+using ColorPicker.Support.Local.Models;
+using ColorPicker.Support.Local.Worker;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using Jamesnet.Wpf.Controls;

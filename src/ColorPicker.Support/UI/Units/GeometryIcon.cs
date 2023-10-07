@@ -2,7 +2,7 @@
 using System.Windows.Controls;
 using System.Windows.Media;
 
-namespace ColorPicker.Main.UI.Units
+namespace ColorPicker.Support.UI.Units
 {
     public class GeometryIcon : ContentControl
     {

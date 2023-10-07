@@ -11,14 +11,4 @@
     <PackageReference Include="MouseKeyHook.NetCore" Version="5.6.1.1" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\ColorPicker.Support\ColorPicker.Support.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Page Update="Themes\Views\ColorPickerWindow.xaml">
-      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
-    </Page>
-  </ItemGroup>
-
 </Project>

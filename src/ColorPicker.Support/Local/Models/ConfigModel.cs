@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace ColorPicker.Main.Local.Models
+namespace ColorPicker.Support.Local.Models
 {
     public class ConfigModel
     {

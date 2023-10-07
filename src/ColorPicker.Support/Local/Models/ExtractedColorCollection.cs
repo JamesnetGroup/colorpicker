@@ -1,11 +1,11 @@
 ﻿using System.Collections.ObjectModel;
 using System.Linq;
 
-namespace ColorPicker.Main.Local.Models
+namespace ColorPicker.Support.Local.Models
 {
     public class ExtractedColorCollection : ObservableCollection<ColorStampModel>
     {
-        internal void Insert(ColorStruct rgba)
+        public void Insert(ColorStruct rgba)
         {
             if (this.FirstOrDefault(x => x.HexColor == ConvertColor.Hex(rgba)) is null)
             {

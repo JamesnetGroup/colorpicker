@@ -1,9 +1,9 @@
-﻿using ColorPicker.Main.Local.Models;
+﻿using ColorPicker.Support.Local.Models;
 using System;
 using System.IO;
 using System.Linq;
 
-namespace ColorPicker.Main.Local.Config
+namespace ColorPicker.Support.Local.Config
 {
     public class ColorConfig
     {

@@ -1,15 +1,13 @@
-﻿using ColorPicker.Main.Local.Models;
+﻿using ColorPicker.Support.Local.Models;
 using Gma.System.MouseKeyHook;
 using System;
 using System.Drawing;
 using System.Windows.Input;
 
-namespace ColorPicker.Main.Local.Worker
+namespace ColorPicker.Support.Local.Worker
 {
     public class PixelExtractWorker
     {
-        #region Variables
-
         // 임시 버퍼의 graphic 타입
         private readonly Bitmap buffer = new(1, 1);
         private readonly Graphics buffer_graphics = null;
@@ -17,25 +15,16 @@ namespace ColorPicker.Main.Local.Worker
         private IKeyboardMouseEvents globalMouseHook;
         public Action<ColorStruct> StartExtract = (p) => { };
         public Action FinishExtract = () => { };
-        #endregion
-
-        #region Constructor
 
         public PixelExtractWorker()
         {
             buffer_graphics = Graphics.FromImage(buffer);
         }
-        #endregion
 
-        #region Begin
-
-        internal void Begin()
+        public void Begin()
         {
             BeginCapture();
         }
-        #endregion
-
-        #region BeginCapture
 
         private void BeginCapture()
         {
@@ -44,18 +33,12 @@ namespace ColorPicker.Main.Local.Worker
             globalMouseHook.MouseDown += GlobalMouseHook_MouseDown;
             Mouse.OverrideCursor = Cursors.Cross;
         }
-        #endregion
-
-        #region GlobalMouseHook_MouseDown
 
         private void GlobalMouseHook_MouseDown(object sender, System.Windows.Forms.MouseEventArgs e)
         {
             CaptureFinished();
             FinishExtract();
         }
-        #endregion
-
-        #region CaptureFinished
 
         private void CaptureFinished()
         {
@@ -64,17 +47,11 @@ namespace ColorPicker.Main.Local.Worker
             globalMouseHook.Dispose();
             Mouse.OverrideCursor = null;
         }
-        #endregion
-
-        #region MainWindow_MouseMove
 
         private void MainWindow_MouseMove(object sender, System.Windows.Forms.MouseEventArgs e)
         {
             SetView(e.X, e.Y);
         }
-        #endregion
-
-        #region SetView
 
         private void SetView(int x, int y)
         {
@@ -89,9 +66,6 @@ namespace ColorPicker.Main.Local.Worker
                 count++;
             }
         }
-        #endregion
-
-        #region ScreenColor
 
         private Color ScreenColor(int x, int y)
         {
@@ -100,6 +74,5 @@ namespace ColorPicker.Main.Local.Worker
             // Pixel 값을 리턴한다.
             return buffer.GetPixel(0, 0);
         }
-        #endregion
     }
 }
