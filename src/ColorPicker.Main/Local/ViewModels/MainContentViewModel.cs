@@ -134,6 +134,24 @@ namespace ColorPicker.Main.Local.ViewModels
             _isCaptureActivated = false;
         }
 
+        [RelayCommand]
+        partial void OnBlueChanged(int value)
+        {
+            RgbChanged();
+        }
+
+        [RelayCommand]
+        partial void OnRedChanged(int value)
+        {
+            RgbChanged();
+        }
+
+        [RelayCommand]
+        partial void OnGreenChanged(int value)
+        {
+            RgbChanged();
+        }
+
         private void RgbChanged()
         {
             if (!_isCaptureActivated)
