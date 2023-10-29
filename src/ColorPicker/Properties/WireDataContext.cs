@@ -10,7 +10,7 @@ namespace ColorPicker.Properties
     {
         protected override void Match(ViewModelLocatorCollection items)
         {
-            items.Register<ColorPickerWindow, ColorPickerViewModel>();
+            items.Register<PaletteWindow, ColorPickerViewModel>();
             items.Register<MainContent, MainContentViewModel>();
         }
     }

@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Jamesnet.Wpf" Version="1.0.0.78" />
+    <PackageReference Include="Jamesnet.Wpf" Version="1.0.0.87" />
     <PackageReference Include="MouseKeyHook.NetCore" Version="5.6.1.1" />
   </ItemGroup>
 
@@ -16,7 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Page Update="Themes\Views\ColorPickerWindow.xaml">
+    <Page Update="Themes\Views\PaletteWindow.xaml">
       <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
     </Page>
   </ItemGroup>

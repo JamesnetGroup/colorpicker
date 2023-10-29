@@ -3,14 +3,14 @@ using System.Windows;
 
 namespace ColorPicker.Forms.UI.Views
 {
-    public class ColorPickerWindow : JamesWindow
+    public class PaletteWindow : DarkThemeWindow
     {
-        static ColorPickerWindow()
+        static PaletteWindow()
         {
-            DefaultStyleKeyProperty.OverrideMetadata(typeof(ColorPickerWindow), new FrameworkPropertyMetadata(typeof(ColorPickerWindow)));
+            DefaultStyleKeyProperty.OverrideMetadata(typeof(PaletteWindow), new FrameworkPropertyMetadata(typeof(PaletteWindow)));
         }
 
-        public ColorPickerWindow()
+        public PaletteWindow()
         {
             Width = 500;
             Height = 400;

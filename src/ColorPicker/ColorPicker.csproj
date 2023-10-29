@@ -5,10 +5,17 @@
     <TargetFramework>net7.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
+    <ApplicationIcon>Images\logo.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Jamesnet.Wpf" Version="1.0.0.78" />
+    <Content Include="Images\logo.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Jamesnet.Wpf" Version="1.0.0.87" />
+    <PackageReference Include="ThemeSwitch" Version="1.0.0" />
+    <PackageReference Include="XamlDesign.Wpf" Version="1.0.0.9" />
   </ItemGroup>
 
   <ItemGroup>

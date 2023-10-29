@@ -11,7 +11,7 @@ namespace ColorPicker
     {
         protected override Window CreateShell()
         {
-            return Container.Resolve<ColorPickerWindow>();
+            return Container.Resolve<PaletteWindow>();
         }
     }
 }
