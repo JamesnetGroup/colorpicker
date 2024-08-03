@@ -10,8 +10,8 @@ Windows에서 색상을 캡처하고 조작할 수 있는 개발자와 디자이
 ## 프로젝트 개요
 ColorPicker는 Windows 운영 체제용 유틸리티 프로그램으로, 사용자가 원하는 색상을 쉽게 캡처하거나 색상을 조합하여 Hex 값을 추출할 수 있게 해줍니다. 이는 간단한 프로그램부터 Photoshop, Illustrator, MS Office, Visual Studio와 같은 전문 소프트웨어에 이르기까지 다양한 애플리케이션에서 개발자와 디자이너가 자주 사용하는 도구입니다.
 
-<img src="https://user-images.githubusercontent.com/74305823/135593932-f5190a51-067b-45a8-93a9-b98e159385d5.png" max-width="200px"/>
-<!--<img src="https://user-images.githubusercontent.com/74305823/135593989-3a6f28fa-7b8b-42ef-b657-83ad296e8208.png" width="30%"/>-->
+<img src="https://github.com/user-attachments/assets/37891327-e967-445e-b2ec-2bc9885b254e" width="49.5%"/>
+<img src="https://github.com/user-attachments/assets/f8e136c0-7cfd-4990-bc4b-e3872138f908" width="49.5%"/>
 
 ## 핵심 기술 및 구현 사항
 #### 1. 커스텀 컨트롤 개발
