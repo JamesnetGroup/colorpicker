@@ -1,5 +1,7 @@
-# ColorPicker [![English](https://img.shields.io/badge/Language-English-blue.svg)](README.md) [![한국어](https://img.shields.io/badge/Language-한국어-red.svg)](README.ko.md)
+# ColorPicker [![English](https://img.shields.io/badge/Language-English-blue.svg)](https://github.com/jamesnet214/colorpicker) [![한국어](https://img.shields.io/badge/Language-한국어-red.svg)](README.ko.md)
+
 Windows에서 색상을 캡처하고 조작할 수 있는 개발자와 디자이너를 위한 실용적인 유틸리티
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![.NET](https://img.shields.io/badge/.NET-8.0-blue.svg)](https://dotnet.microsoft.com/download)
 [![Stars](https://img.shields.io/github/stars/jamesnet214/colorpicker.svg)](https://github.com/jamesnet214/colorpicker/stargazers)
