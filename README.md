@@ -10,8 +10,8 @@ A practical utility for developers and designers to capture and manipulate color
 ## Project Overview
 ColorPicker is a utility program for the Windows operating system that allows users to easily capture desired colors or extract Hex values by combining colors. It's a tool frequently used by both developers and designers, found in applications ranging from simple programs to professional software like Photoshop, Illustrator, MS Office, and IDEs like Visual Studio.
 
-![ColorPicker Overview](https://user-images.githubusercontent.com/52397976/135721690-4de6f12f-645e-44e5-97fb-a780202c7583.png)
-
+<img src="https://user-images.githubusercontent.com/52397976/135721690-4de6f12f-645e-44e5-97fb-a780202c7583.png" width="49.5%"/>
+<img src="https://user-images.githubusercontent.com/52397976/135721690-4de6f12f-645e-44e5-97fb-a780202c7583.png" width="49.5%"/>
 
 
 ## Key Technologies and Implementations
