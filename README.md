@@ -1,70 +1,82 @@
-## ColorPicker
+# ColorPicker [![English](https://img.shields.io/badge/Language-English-blue.svg)](README.md) [![한국어](https://img.shields.io/badge/Language-한국어-red.svg)](README.ko.md)
 
-이 리포지토리는 개발자와 디자이너가 자주 사용하는 도구 중 하나인 ColorPicker에 대한 리포지토리입니다. <br /> 
- 
-| Star | License | Activity |
-|:----:|:-------:|:--------:|
-| <a href="https://github.com/devncore/colorpicker/stargazers"><img src="https://img.shields.io/github/stars/devncore/colorpicker" alt="Github Stars"></a> | <img src="https://img.shields.io/github/license/devncore/colorpicker" alt="License"> | <a href="https://github.com/devncore/colorpicker/pulse"><img src="https://img.shields.io/github/commit-activity/m/devncore/colorpicker" alt="Commits-per-month"></a> |
+A practical utility for developers and designers to capture and manipulate colors in Windows
 
-<br />
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![.NET](https://img.shields.io/badge/.NET-8.0-blue.svg)](https://dotnet.microsoft.com/download)
+[![Stars](https://img.shields.io/github/stars/jamesnet214/colorpicker.svg)](https://github.com/jamesnet214/colorpicker/stargazers)
+[![Issues](https://img.shields.io/github/issues/jamesnet214/colorpicker.svg)](https://github.com/jamesnet214/colorpicker/issues)
 
-## Contents
-- [소개](#소개)
-- [개발환경](#개발환경)
-- [학습 가이드](#학습-가이드)
-- [스크린샷](#스크린샷)
-  
-<br />
+## Project Overview
+ColorPicker is a utility program for the Windows operating system that allows users to easily capture desired colors or extract Hex values by combining colors. It's a tool frequently used by both developers and designers, found in applications ranging from simple programs to professional software like Photoshop, Illustrator, MS Office, and IDEs like Visual Studio.
 
-## 소개
-
-![image](https://user-images.githubusercontent.com/52397976/135721690-4de6f12f-645e-44e5-97fb-a780202c7583.png)
-
-> ColorPicker는 개발자와 디자이너가 자주 사용하는 도구입니다. 간단한 프로그램에서부터 포토샵과 일러스트, MS 오피스, Visual Studio와 같은 IDE 앱에서도 부분적으로 제공하는 기능입니다.
-
-이 프로그램은 윈도우 운영체제에서 원하는 색상을 손쉽게 캡쳐하거나 색상들을 조합하여 **Hex**값으로 추출하는 기능 등을 제공하는 유틸리티 프로그램입니다.
-
-<br />
-
-## 개발환경
-  
-✔️ **WPF .NET Core** &nbsp; [.NET 6.0 Preview](https://dotnet.microsoft.com/download/dotnet/6.0)
-
-✔️ **Visual Studio 2022 Preview**  
+![ColorPicker Overview](https://user-images.githubusercontent.com/52397976/135721690-4de6f12f-645e-44e5-97fb-a780202c7583.png)
 
 
-[![image](https://user-images.githubusercontent.com/52397976/127085632-9af789b0-58bd-4e63-be6c-30f567cf088b.png)](https://devblogs.microsoft.com/visualstudio/visual-studio-2022-preview-1-now-available/)
 
-<br />
+## Key Technologies and Implementations
+#### 1. Custom Control Development
+- [x] Implementation of custom ColorWheel and ColorSlider controls
+- [x] Advanced use of WPF rendering techniques
 
-## 학습 가이드
+#### 2. MVVM Architecture
+- [x] Full implementation of MVVM pattern and data binding optimization
+- [x] Effective use of RelayCommand and INotifyPropertyChanged interface
 
-> 이 앱은 소스코드와 구조를 단순화 하고 MVVM 패턴을 사용하여 WPF 리소스를 최적화한 프로젝트입니다.
+#### 3. Advanced WPF Techniques
+- [x] Utilization of Triggers for dynamic UI updates
+- [x] Implementation of custom ItemsControl with virtualization
+- [x] Advanced usage of ControlTemplate and DataTemplate
 
-- **초보자:** WPF와 MVVM의 이해가 부족하더라도 약 6시간 이내에 소스코드 전체를 작성하고 실행시킬 수 있습니다.
-- **숙련자:** C#과 WPF를 접해본 개발자라면 약 3시간 이내에 소스코드 전체를 작성하고 실행시킬 수 있습니다.
+#### 4. Color Manipulation
+- [x] Real-time color conversion between different color spaces (RGB, HSV, Hex)
+- [x] Screen color capture functionality
 
-**Color Picker**를 통해 학습할 수 있는 기술들은 아래와 같습니다.
-- [x] CustomControl
-- [x] Trigger
-- [x] Mvvm 패턴
-- [x] DataContext
-- [x] RelayCommand
-- [x] Binding
-- [x] RelativeSource TemplatedParent
-- [x] ListBox / ListBoxItem
-- [x] ItemsPresenter
-- [x] ContentPresenter
-- [x] GetContainerForItemOverride
-- [x] OnApplyTemplate
-- [x] Geometry
-- [x] Hex Color
-- [x] Transparent
-- [x] Application
+#### 5. Performance Optimization
+- [x] Efficient rendering of color wheel and sliders
+- [x] Smooth UI interactions even with rapid color changes
 
-<br />
+## Technology Stack
+- .NET 8.0
+- WPF (Windows Presentation Foundation)
+- MVVM (Model-View-ViewModel) pattern
 
-## 스크린샷
-![image](https://user-images.githubusercontent.com/74305823/135593932-f5190a51-067b-45a8-93a9-b98e159385d5.png)
+## Getting Started
+### Prerequisites
+- Visual Studio 2022 or later
+- .NET 8.0 SDK
 
-![image](https://user-images.githubusercontent.com/74305823/135593989-3a6f28fa-7b8b-42ef-b657-83ad296e8208.png)
+### Installation and Execution
+#### 1. Clone the repository:
+```
+git clone https://github.com/jamesnet214/colorpicker.git
+```
+#### 2. Open the solution
+- [x] Visual Studio
+- [x] Visual Studio Code
+- [x] Jetbrains Rider
+
+#### 3. Build and Run
+- [x] Windows 11 recommended
+
+## Usage
+1. Launch the ColorPicker application
+2. Use the color wheel or sliders to select a color
+3. Capture colors from your screen using the eyedropper tool
+4. View and copy the Hex, RGB, or HSV values of the selected color
+
+## Screenshots
+![Screenshot 1](https://user-images.githubusercontent.com/74305823/135593932-f5190a51-067b-45a8-93a9-b98e159385d5.png)
+![Screenshot 2](https://user-images.githubusercontent.com/74305823/135593989-3a6f28fa-7b8b-42ef-b657-83ad296e8208.png)
+
+## Contributing
+If you'd like to contribute to improving the project, please send a Pull Request. All forms of contribution are welcome!
+
+## License
+This project is distributed under the MIT license. For more details, please refer to the [LICENSE](https://github.com/jamesnet214/colorpicker/blob/main/LICENSE) file.
+
+## Contact
+- Website: https://jamesnet.dev
+- Email: james@jamesnet.dev, vickyqu115@hotmail.com
+
+Explore color manipulation techniques and apply them to your projects with ColorPicker!
