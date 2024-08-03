@@ -10,9 +10,9 @@ A practical utility for developers and designers to capture and manipulate color
 ## Project Overview
 ColorPicker is a utility program for the Windows operating system that allows users to easily capture desired colors or extract Hex values by combining colors. It's a tool frequently used by both developers and designers, found in applications ranging from simple programs to professional software like Photoshop, Illustrator, MS Office, and IDEs like Visual Studio.
 
-<img src="https://user-images.githubusercontent.com/52397976/135721690-4de6f12f-645e-44e5-97fb-a780202c7583.png" width="49.5%"/>
-<img src="https://user-images.githubusercontent.com/52397976/135721690-4de6f12f-645e-44e5-97fb-a780202c7583.png" width="49.5%"/>
 
+<img src="https://user-images.githubusercontent.com/74305823/135593932-f5190a51-067b-45a8-93a9-b98e159385d5.png" max-width="200px"/>
+<!--<img src="https://user-images.githubusercontent.com/74305823/135593989-3a6f28fa-7b8b-42ef-b657-83ad296e8208.png" width="30%"/>-->
 
 ## Key Technologies and Implementations
 #### 1. Custom Control Development
@@ -64,10 +64,6 @@ git clone https://github.com/jamesnet214/colorpicker.git
 2. Use the color wheel or sliders to select a color
 3. Capture colors from your screen using the eyedropper tool
 4. View and copy the Hex, RGB, or HSV values of the selected color
-
-## Screenshots
-![Screenshot 1](https://user-images.githubusercontent.com/74305823/135593932-f5190a51-067b-45a8-93a9-b98e159385d5.png)
-![Screenshot 2](https://user-images.githubusercontent.com/74305823/135593989-3a6f28fa-7b8b-42ef-b657-83ad296e8208.png)
 
 ## Contributing
 If you'd like to contribute to improving the project, please send a Pull Request. All forms of contribution are welcome!
