@@ -1,4 +1,4 @@
-# ColorPicker [![English](https://img.shields.io/badge/Language-English-blue.svg)](README.md) [![한국어](https://img.shields.io/badge/Language-한국어-red.svg)](README.ko.md)
+# ColorPicker [![English](https://img.shields.io/badge/Language-English-blue.svg)](README.md) [![中文](https://img.shields.io/badge/docs-中文-red.svg)](README.zh-CN.md) [![한국어](https://img.shields.io/badge/Language-한국어-green.svg)](README.ko.md)
 
 Windows에서 색상을 캡처하고 조작할 수 있는 개발자와 디자이너를 위한 실용적인 유틸리티
 
